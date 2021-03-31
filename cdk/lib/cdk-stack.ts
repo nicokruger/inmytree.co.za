@@ -18,7 +18,7 @@ export class CdkStack extends cdk.Stack {
 
     const websiteBucket = new s3.Bucket(this, 'inmytree-co-za', {
       websiteIndexDocument: 'index.html',
-      publicReadAccess: false
+      publicReadAccess: true
     });
 
     /*
