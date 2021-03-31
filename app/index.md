@@ -37,6 +37,6 @@ head:
     content: "https://inmytree.co.za/social/home.png"
 ---
 
-## Blog
+## Posts
 
 <Posts/>

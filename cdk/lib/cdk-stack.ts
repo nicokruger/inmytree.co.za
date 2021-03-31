@@ -18,12 +18,7 @@ export class CdkStack extends cdk.Stack {
 
     const websiteBucket = new s3.Bucket(this, 'inmytree-co-za', {
       websiteIndexDocument: 'index.html',
-      publicReadAccess: true
-    });
-
-    new s3deploy.BucketDeployment(this, 'DeployWebsite', {
-      sources: [s3deploy.Source.asset('../app/.vitepress/dist')],
-      destinationBucket: websiteBucket,
+      publicReadAccess: false
     });
 
     /*
@@ -99,7 +94,7 @@ export class CdkStack extends cdk.Stack {
     const sourceOutput = new codepipeline.Artifact();
     const webappFilesOutput = new codepipeline.Artifact('webapp');
 
-    let stages: codepipeline.StageProps[] = [
+    const stages: codepipeline.StageProps[] = [
     {
       stageName: 'Source',
       actions: [

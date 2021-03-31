@@ -5,7 +5,7 @@ description: "We recently re-architected our pricing algorithm to run AWS native
 
 At my employer Digitata, we recently re-architected our pricing algorithm to run AWS native. In this super cool blog post, I'll show you how, but more importantly **why** we are seeing a decrease in training times of up to 100x.
 
-As you may already know, the basic ways of speeding up any kind of algorithm, can be summed up as always <span class="text-xs">(*non exhaustive list*)</span>:
+As you may already know, the basic ways of speeding up any kind of algorithm, can be summed up as always <span class="text-xs">(*non exhaustive list*)</span>:
 
 - Use a bigger machine. Not always practical or affordable.
 - Run it in parallell.

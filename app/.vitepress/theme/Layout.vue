@@ -13,8 +13,8 @@
         </template>
         <Content class="content animate-fadeIn"/>
         <template v-if="post">
-        <Newsletter />
-        <h2>Other Vue Articles</h2>
+          <!--<Newsletter />-->
+        <h2>Other AWS Articles</h2>
         <Posts/>
         </template>
       </main>
