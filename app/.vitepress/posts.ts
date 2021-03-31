@@ -10,8 +10,8 @@ export default [
         tags: [ 'aws', 'ml', 'digitata']
     },
     {
-        url: '/blog/deploy-a-simple-vitepressvue3-blog-on-cloudfronts3-with-aws-pipelines-using-cdkcloudformation/',
-        title: 'Deploy a simple Vitepress/Vue3 blog on Cloudfront/S3 with AWS Pipelines using CDK/Cloudformation',
+        url: '/blog/deploy-a-simple-blog-on-cloudfronts3-with-aws-pipelines-using-cdkcloudformation/',
+        title: 'Deploy a simple blog on Cloudfront/S3 with AWS Pipelines using CDK/Cloudformation',
         publishDate: '30st March 2021',
         date: '2021-03-30',
         excerpt: 'Taking advantage of AWS Free Tier, you can host your own blog for free. Using basic AWS services, it can also auto-update whenever you commit markdown to a GitHub repo.',
