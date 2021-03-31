@@ -1,0 +1,29 @@
+{
+  "name": "inmytree.co.za",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.4.0",
+    "autoprefixer": "^10.2.3",
+    "node-sass": "^5.0.0",
+    "postcss": "^7",
+    "sass": "^1.32.5",
+    "sass-loader": "^10.1.1",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.1",
+    "vitepress": "^0.12.0",
+    "zooming": "^2.1.1"
+  },
+  "scripts": {
+    "dev": "export NODE_ENV=development; vitepress dev app",
+    "build": "export NODE_ENV=production; vitepress build app",
+    "serve": "vitepress serve app"
+  },
+  "dependencies": {
+    "@panelbear/panelbear-js": "^1.2.0",
+    "feed": "^4.2.2",
+    "globby": "^11.0.2",
+    "gray-matter": "^4.0.2",
+    "lodash": "^4.17.20"
+  }
+}
