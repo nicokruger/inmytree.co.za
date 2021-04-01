@@ -1,10 +1,10 @@
 ---
 title: "Deploy a simple blog on Cloudfront/S3 with AWS Pipelines using CDK/Cloudformation"
-description: 'Taking advantage of AWS Free Tier, you can host your own blog for free. Using basic AWS services, it can also auto-update whenever you commit markdown to a GitHub repo.',
+description: 'Taking advantage of AWS Free Tier, you can host your own blog for free. Using basic AWS services, it can also auto-update whenever you commit markdown to a GitHub repo.'
 head:
 - - meta
   - name: description
-    content: 'Taking advantage of AWS Free Tier, you can host your own blog for free. Using basic AWS services, it can also auto-update whenever you commit markdown to a GitHub repo.'
+    content: "Taking advantage of AWS Free Tier, you can host your own blog for free. Using basic AWS services, it can also auto-update whenever you commit markdown to a GitHub repo."
 - - meta
   - property: "og:type"
     content: "website"
@@ -16,7 +16,7 @@ head:
     content: "Deploy a simple blog on Cloudfront/S3 with AWS Pipelines using CDK/Cloudformation"
 - - meta
   - property: "og:description"
-    content: 'Taking advantage of AWS Free Tier, you can host your own blog for free. Using basic AWS services, it can also auto-update whenever you commit markdown to a GitHub repo.',
+    content: "Taking advantage of AWS Free Tier, you can host your own blog for free. Using basic AWS services, it can also auto-update whenever you commit markdown to a GitHub repo."
 - - meta
   - property: "og:image"
     content: "http://d1l4t2nlabw898.cloudfront.net/social/aws-deploy-blog.png"
@@ -31,7 +31,7 @@ head:
     content: "Deploy a simple blog on Cloudfront/S3 with AWS Pipelines using CDK/Cloudformation"
 - - meta
   - property: "twitter:description"
-    content: 'Taking advantage of AWS Free Tier, you can host your own blog for free. Using basic AWS services, it can also auto-update whenever you commit markdown to a GitHub repo.',
+    content: "Taking advantage of AWS Free Tier, you can host your own blog for free. Using basic AWS services, it can also auto-update whenever you commit markdown to a GitHub repo."
 - - meta
   - property: "twitter:image"
     content: "http://d1l4t2nlabw898.cloudfront.net/social/aws-deploy-blog.png"

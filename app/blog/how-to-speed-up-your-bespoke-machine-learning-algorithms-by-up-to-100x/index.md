@@ -16,7 +16,7 @@ head:
     content: "How to speed up your bespoke machine learning algorithms by up to 100x"
 - - meta
   - property: "og:description"
-    content:"We recently redesigned our pricing algorithm to run AWS native. Find out how we are seeing up to a 100x speed improvement on training times."
+    content: "We recently redesigned our pricing algorithm to run AWS native. Find out how we are seeing up to a 100x speed improvement on training times."
 - - meta
   - property: "og:image"
     content: "http://d1l4t2nlabw898.cloudfront.net/social/speed-up-ml.png"
@@ -31,7 +31,7 @@ head:
     content: "How to speed up your bespoke machine learning algorithms by up to 100x"
 - - meta
   - property: "twitter:description"
-    content:"We recently redesigned our pricing algorithm to run AWS native. Find out how we are seeing up to a 100x speed improvement on training times."
+    content: "We recently redesigned our pricing algorithm to run AWS native. Find out how we are seeing up to a 100x speed improvement on training times."
 - - meta
   - property: "twitter:image"
     content: "http://d1l4t2nlabw898.cloudfront.net/social/speed-up-ml.png"
