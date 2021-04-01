@@ -17,7 +17,7 @@ Traditionally at Digitata, we have preferred the lazy option: #1 - just make the
 
 By embracing a work queue-based design, and taking advantage of the inherent parallel nature of pricing optimisation calculations, we can achieve a massive speedup in training times by combining Lambda, SQS and Athena:
 <figure>
-<img src="../../resources/aws-short-pricing.svg" class="block mx-auto" alt="AWS Architecture Diagram">
+<img src="/resources/aws-short-pricing.svg" class="block mx-auto" alt="AWS Architecture Diagram">
 <figcaption>The current design</figcaption>
 </figure>
 
