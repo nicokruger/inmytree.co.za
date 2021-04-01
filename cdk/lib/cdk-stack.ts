@@ -39,6 +39,7 @@ export class CdkStack extends cdk.Stack {
     const invalidateCloudfrontLambda = new aws_lambda.Function(this, 'InvalidateCloudfront', {
       runtime: aws_lambda.Runtime.NODEJS_12_X,
       code: aws_lambda.Code.fromInline(fs.readFileSync('InvalidateCloudfront.js').toString()),
+      timeout: cdk.Duration.seconds(30),
       handler: "index.handler"
     });
 
