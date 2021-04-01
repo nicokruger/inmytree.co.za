@@ -178,14 +178,14 @@ A step that you will have to do manually, is to create an access token on your G
 
 First, create a GitHub access token in your GitHub account by going to Settings -> Applications
 <figure>
-<img src="../../resources/github-access-token.png" class="block mx-auto" alt="Newsletter component example">
+<img src="../../resources/github-access-token.png" class="block mx-auto" alt="Github screenshot">
 <figcaption>GitHub Access Token Setup</figcaption>
 </figure>
 
 After that, create a Secret in AWS Secret Manager, and store it as follows:
 
 <figure>
-<img src="../../resources/aws-github-secret-access-token.png" class="block mx-auto" alt="Newsletter component example">
+<img src="../../resources/aws-github-secret-access-token.png" class="block mx-auto" alt="Secrets manager screenshot">
 <figcaption>Adding auth token as a secret</figcaption>
 </figure>
 
@@ -229,7 +229,7 @@ arn:aws:cloudformation:eu-west-1:xxxxxxxxxxx:stack/stack-name/a-b-c-d
 This will go ahead and deploy the CloudFormation stack. It will take a while (especially creating the CloudFront distribution) but after it is completed you should have all the infrastructure needed as well as a pipeline to build the blog itself and deploy it to S3:
 
 <figure>
-<img src="../../resources/blog-cdk-pipeline.png" class="block mx-auto" alt="Newsletter component example">
+<img src="../../resources/blog-cdk-pipeline.png" class="block mx-auto" alt="Pipeline screenshot">
 <figcaption>Deployment Pipeline</figcaption>
 </figure>
 

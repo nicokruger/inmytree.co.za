@@ -8,7 +8,7 @@ import NotFound from './NotFound.vue';
 import CardPost from './components/CardPost.vue';
 import Posts from './components/Posts.vue'
 import Newsletter from './components/Newsletter.vue'
-import Zooming from 'zooming'
+//import Zooming from 'zooming'
 import * as Panelbear from '@panelbear/panelbear-js'
 
 const theme = {
@@ -24,20 +24,24 @@ const theme = {
             return
         }
 
+        /*
         const zooming = new Zooming()
         zooming.config({
             scaleBase: 0.75,
             bgOpacity: 0,
         })
         app.provide('zoom', zooming)
+        */
 
         // analytics
+        /*
         app.provide('analytics', Panelbear)
         Panelbear.load(import.meta.env.VITE_PANELBEAR_ID, {
             spaMode: 'history',
             autoTrack: true,
             debug: import.meta.env.DEV
         })
+        */
     }
 };
 export default theme;
