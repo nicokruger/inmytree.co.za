@@ -46,7 +46,7 @@ app/
 
 ### Setup CDK
 
-To setup the AWS infrastructure, get started by installing and configuring the [AWS CDK](https://github.com/vuejs/vitepress). Make sure that you follow the instructions to get started and can `cdk synth` on a small example project succesfully.
+To setup the AWS infrastructure, get started by installing and configuring the [AWS CDK](https://github.com/vuejs/vitepress). Make sure that you follow the instructions to get started and can `cdk synth` on a small example project successfully.
 
 CDK allows us to specify infrastructure, **literally** as code, in my case typescript:
 

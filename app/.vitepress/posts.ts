@@ -4,7 +4,7 @@ export default [
         title: 'How to speed up your bespoke machine learning algorithms by up to 100x',
         publishDate: '31st March 2021',
         date: '2021-03-31',
-        excerpt: 'We recently re-architected our pricing algorithm to run AWS native. Find out how we are seeing up to a 100x speed improvement on training times.',
+        excerpt: 'We recently redesigned our pricing algorithm to run AWS native. Find out how we are seeing up to a 100x speed improvement on training times.',
         status: 'published',
         readMins: 20,
         tags: [ 'aws', 'ml', 'digitata']
