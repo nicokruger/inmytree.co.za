@@ -1,3 +1,42 @@
+---
+title: "Deploy a simple blog on Cloudfront/S3 with AWS Pipelines using CDK/Cloudformation"
+description: 'Taking advantage of AWS Free Tier, you can host your own blog for free. Using basic AWS services, it can also auto-update whenever you commit markdown to a GitHub repo.',
+head:
+- - meta
+  - name: description
+    content: 'Taking advantage of AWS Free Tier, you can host your own blog for free. Using basic AWS services, it can also auto-update whenever you commit markdown to a GitHub repo.'
+- - meta
+  - property: "og:type"
+    content: "website"
+- - meta
+  - property: "og:url"
+    content: "http://d1l4t2nlabw898.cloudfront.net/deploy-a-simple-blog-on-cloudfronts3-with-aws-pipelines-using-cdkcloudformation/"
+- - meta
+  - property: "og:title"
+    content: "Deploy a simple blog on Cloudfront/S3 with AWS Pipelines using CDK/Cloudformation"
+- - meta
+  - property: "og:description"
+    content: 'Taking advantage of AWS Free Tier, you can host your own blog for free. Using basic AWS services, it can also auto-update whenever you commit markdown to a GitHub repo.',
+- - meta
+  - property: "og:image"
+    content: "http://d1l4t2nlabw898.cloudfront.net/social/aws-deploy-blog.png"
+- - meta
+  - property: "twitter:card"
+    content: "summary_large_image"
+- - meta
+  - property: "twitter:url"
+    content: "http://d1l4t2nlabw898.cloudfront.net/deploy-a-simple-blog-on-cloudfronts3-with-aws-pipelines-using-cdkcloudformation/"
+- - meta
+  - property: "twitter:title"
+    content: "Deploy a simple blog on Cloudfront/S3 with AWS Pipelines using CDK/Cloudformation"
+- - meta
+  - property: "twitter:description"
+    content: 'Taking advantage of AWS Free Tier, you can host your own blog for free. Using basic AWS services, it can also auto-update whenever you commit markdown to a GitHub repo.',
+- - meta
+  - property: "twitter:image"
+    content: "http://d1l4t2nlabw898.cloudfront.net/social/aws-deploy-blog.png"
+---
+
 Annoyed with blogging platforms like medium? Yearn for the good old days where we all had to host everything ourselves? If you're a little impractical, old-fashioned, grumpy and nostalgic like me, this article is for you.
 
 I'll show you how to deploy a full static blog using AWS services, without you having to click (much) in the console. We'll be using the following AWS services:

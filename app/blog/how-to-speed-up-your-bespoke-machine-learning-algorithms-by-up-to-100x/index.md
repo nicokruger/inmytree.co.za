@@ -1,6 +1,40 @@
 ---
 title: "How to speed up your bespoke machine learning algorithms by up to 100x"
 description: "We recently redesigned our pricing algorithm to run AWS native. Find out how we are seeing up to a 100x speed improvement on training times."
+head:
+- - meta
+  - name: description
+    content: "We recently redesigned our pricing algorithm to run AWS native. Find out how we are seeing up to a 100x speed improvement on training times."
+- - meta
+  - property: "og:type"
+    content: "website"
+- - meta
+  - property: "og:url"
+    content: "http://d1l4t2nlabw898.cloudfront.net/how-to-speed-up-your-bespoke-machine-learning-algorithms-by-up-to-100x/"
+- - meta
+  - property: "og:title"
+    content: "How to speed up your bespoke machine learning algorithms by up to 100x"
+- - meta
+  - property: "og:description"
+    content:"We recently redesigned our pricing algorithm to run AWS native. Find out how we are seeing up to a 100x speed improvement on training times."
+- - meta
+  - property: "og:image"
+    content: "http://d1l4t2nlabw898.cloudfront.net/social/speed-up-ml.png"
+- - meta
+  - property: "twitter:card"
+    content: "summary_large_image"
+- - meta
+  - property: "twitter:url"
+    content: "http://d1l4t2nlabw898.cloudfront.net/how-to-speed-up-your-bespoke-machine-learning-algorithms-by-up-to-100x/"
+- - meta
+  - property: "twitter:title"
+    content: "How to speed up your bespoke machine learning algorithms by up to 100x"
+- - meta
+  - property: "twitter:description"
+    content:"We recently redesigned our pricing algorithm to run AWS native. Find out how we are seeing up to a 100x speed improvement on training times."
+- - meta
+  - property: "twitter:image"
+    content: "http://d1l4t2nlabw898.cloudfront.net/social/speed-up-ml.png"
 ---
 
 At my employer Digitata, we recently redesigned our pricing algorithm to run AWS native. In this super cool blog post, I'll show you how, but more importantly **why** we are seeing a decrease in training times of up to 100x.
