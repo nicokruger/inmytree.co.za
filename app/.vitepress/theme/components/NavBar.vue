@@ -7,7 +7,9 @@
         :href="$site.base"
     >
     <img src="/resources/tsis_ed.png" width="80" height="80" loading="lazy" alt="ed vedder tree" style="margin-top: 0 !important; margin-bottom: 0 !important;" class="inline rounded-full object-center md:h-20 md:w-20 h-12 w-12 object-cover" />
-      <span class="font-bold font-header text-green-700">inmytree</span>
+      <span class="font-bold font-header text-green-700">
+        in<span class="text-green-500">my</span>tree
+      </span>
     </a>
   </div>
   <div class="flex-grow"></div>

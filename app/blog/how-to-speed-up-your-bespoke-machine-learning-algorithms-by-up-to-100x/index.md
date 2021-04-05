@@ -37,7 +37,7 @@ head:
     content: "https://www.inmytree.co.za/social/speed-up-ml.png"
 ---
 
-At my employer Digitata, we recently redesigned our pricing algorithm to run AWS native. In this super cool blog post, I'll show you how, but more importantly **why** we are seeing a decrease in training times of up to 100x.
+At my employer Digitata, we recently redesigned our pricing algorithm to run AWS native. We are seeing seeing a speed up of up to 100x in training times. This post is all about how we did it.
 
 As you may already know, the basic ways of speeding up any kind of algorithm, can be summed up as always <span class="text-xs">(*non exhaustive list*)</span>:
 
