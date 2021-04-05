@@ -10,7 +10,7 @@ head:
     content: "website"
 - - meta
   - property: "og:url"
-    content: "https://d1l4t2nlabw898.cloudfront.net/how-to-speed-up-your-bespoke-machine-learning-algorithms-by-up-to-100x/"
+    content: "https://www.inmytree.co.za/how-to-speed-up-your-bespoke-machine-learning-algorithms-by-up-to-100x/"
 - - meta
   - property: "og:title"
     content: "How to speed up your bespoke machine learning algorithms by up to 100x"
@@ -19,13 +19,13 @@ head:
     content: "We recently redesigned our pricing algorithm to run AWS native. Find out how we are seeing up to a 100x speed improvement on training times."
 - - meta
   - property: "og:image"
-    content: "https://d1l4t2nlabw898.cloudfront.net/social/speed-up-ml.png"
+    content: "https://www.inmytree.co.za/social/speed-up-ml.png"
 - - meta
   - property: "twitter:card"
     content: "summary_large_image"
 - - meta
   - property: "twitter:url"
-    content: "https://d1l4t2nlabw898.cloudfront.net/how-to-speed-up-your-bespoke-machine-learning-algorithms-by-up-to-100x/"
+    content: "https://www.inmytree.co.za/how-to-speed-up-your-bespoke-machine-learning-algorithms-by-up-to-100x/"
 - - meta
   - property: "twitter:title"
     content: "How to speed up your bespoke machine learning algorithms by up to 100x"
@@ -34,7 +34,7 @@ head:
     content: "We recently redesigned our pricing algorithm to run AWS native. Find out how we are seeing up to a 100x speed improvement on training times."
 - - meta
   - property: "twitter:image"
-    content: "https://d1l4t2nlabw898.cloudfront.net/social/speed-up-ml.png"
+    content: "https://www.inmytree.co.za/social/speed-up-ml.png"
 ---
 
 At my employer Digitata, we recently redesigned our pricing algorithm to run AWS native. In this super cool blog post, I'll show you how, but more importantly **why** we are seeing a decrease in training times of up to 100x.

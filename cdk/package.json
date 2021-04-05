@@ -29,6 +29,7 @@
     "@aws-cdk/aws-route53-targets": "^1.95.1",
     "@aws-cdk/aws-s3-deployment": "^1.95.1",
     "@aws-cdk/core": "^1.95.1",
+    "@spencerbeggs/aws-cdk-domain-redirect": "^1.4.2",
     "source-map-support": "^0.5.16"
   }
 }
