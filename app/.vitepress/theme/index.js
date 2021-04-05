@@ -34,14 +34,12 @@ const theme = {
         */
 
         // analytics
-        /*
         app.provide('analytics', Panelbear)
         Panelbear.load(import.meta.env.VITE_PANELBEAR_ID, {
             spaMode: 'history',
             autoTrack: true,
             debug: import.meta.env.DEV
         })
-        */
     }
 };
 export default theme;
