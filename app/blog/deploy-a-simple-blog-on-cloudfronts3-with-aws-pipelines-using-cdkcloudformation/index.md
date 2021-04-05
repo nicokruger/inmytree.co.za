@@ -51,6 +51,8 @@ Additionally, we'll be using the [AWS CDK](https://aws.amazon.com/cdk/) to deplo
 
 The blog itself is written as a [Vue3/Vitepress static site](https://github.com/vuejs/vitepress). You can replace this with any kind of blog you want, such as jekyll,vuepress etc.
 
+The full blog repository is available [here](https://github.com/nicokruger/inmytree.co.za)
+
 ## AWS Infrastructure
 
 ### Project
@@ -283,5 +285,5 @@ Additionally, every time you commit to the master branch the pipeline should run
 
 That's it! I hope this post can give you an idea on other options to host blogs in modern times, by taking advantage of AWS cloud features. This type of setup will basically fall under the AWS free tier until that runs out. After that, the cost will be less than $1 a month, unless you hit reddit-type traffic :-)
 
-
+The repository is available [here](https://github.com/nicokruger/inmytree.co.za)
 
