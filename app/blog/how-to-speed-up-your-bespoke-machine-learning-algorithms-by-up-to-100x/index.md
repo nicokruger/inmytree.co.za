@@ -37,15 +37,15 @@ head:
     content: "https://www.inmytree.co.za/social/speed-up-ml.png"
 ---
 
-At my employer Digitata, we recently redesigned our pricing algorithm to run AWS native. We are seeing seeing a speed up of up to 100x in training times. This post is all about how we did it.
+At my employer [Digitata](https://vaitom.digitata.com), we recently redesigned our pricing algorithm to run AWS native. We are seeing seeing a speed up of up to 100x in training times. This post is all about how we did it.
 
-As you may already know, the basic ways of speeding up any kind of algorithm, can be summed up as always <span class="text-xs">(*non exhaustive list*)</span>:
+As you may already know, the basic ways of speeding up any kind of algorithm, are: 
 
 - Use a bigger machine. Not always practical or affordable.
 - Run it in parallel.
 - Optimise the algorithm. Usually starting with the data preparation.
 
-Traditionally at Digitata, we have preferred the lazy option: #1 - just make the machine bigger! This time, however, we decided to do it _right_.  We decided to run it in parallel. After all, that's what AWS is really good at, right?
+Traditionally at Digitata, we have preferred the option: #1 - just make the machine bigger! This time, however, we decided to do it _right_.  We decided to run it in parallel. After all, that's what AWS is really good at, right?
 
 ## How
 
@@ -62,17 +62,17 @@ We use Step Functions and DynamoDB to coordinate all the different states of the
 
 Machine learning algorithms generally involve computationally intensive operations on large data sets. As your data sets starts growing, you will find major benefit by splitting your data set, and thus the work, into independent sets of work for your algorithm. We'll call this, the _unit of work_. First, you have to determine what will be the unit of work for your specific algorithm.
 
-In the case of our model, this was easy. One look into the core of the python code, you find a function such as this:
+In the case of our model, this was easy. One look into the core of the python code, you find functions that look like this:
 
 ```python
-def calculate_data_price(row):
-  dimensions = [row.segment, row.location, row.product]
+def calculate_data_price(data):
+  dimensions = [data.segment, data.location, data.product]
   # some code here that makes the model do its thing
   # lots of clever work here
   return price
 
-def calculate_voice_price(row):
-  dimensions = [row.cell, row.time]
+def calculate_voice_price(data):
+  dimensions = [data.cell, data.time]
   # some code here that makes the model do its thing
   # lots of clever work here
   return price
@@ -94,8 +94,22 @@ Once you know what your unit of work is, refactor your code so that it works on 
 def do_work(item):
   # in our case, this now checks for a "type of job" - ie. voice or data.
   # so that we have one entry point
+  if item.type === "voice":
+    calculate_voice_price(item)
+  elif item.type === "data":
+    calculate_data_price(item)
 
   # more ML magic redacted
+
+# in our previous design, this was effectively the output of a query
+# against the database - we would get a row for every piece of work to
+# be done.
+# note: this function can be easily adapted to get "rows" from a queue!
+def calculate(rows):
+  for row in rows:
+    # this is our "unit of work" - we just need to change the way
+    # this function is called
+    do_work(row)
 
 ```
 
