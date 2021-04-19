@@ -245,8 +245,13 @@ The culmination of all of this, is that when the bucketing Athena query is run, 
 
 ## Why its good for us
 
-We are seeing improvements in training times of up to 100x. Jobs that used to take 40 minutes are taking 1 minute or less, using a batch size of around 3,000.
+We are seeing improvements in training times of up to 100x. Jobs that used to take 40 minutes are taking 1 minute or less, using a batch size of around 3,000. This allows us to help/improve in the following areas:
 
-Future improvements:
+- Reduced on-prem hardware footprint.
+- Improved capability to run simulations/scenarios.
+- Improved forecasting capability.
+
+## Future improvements
+
 - With a batch size of 3,000, it seems as if Lambda is utilising around 300 concurrent lambda invocations. Perhaps we can up this number somehow, by tuning Lambda itself or reaching out to AWS support or SA?
 - Initial tests leveraging ECS and Batch from SQS instead of Lambda had massive potential in terms of speed improvements for larger jobs - but this has a cost implication. It is however worth investigating further what can be done to lower the cost of this solution.
