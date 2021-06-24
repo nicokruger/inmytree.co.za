@@ -1,5 +1,16 @@
 export default [
     {
+        url: '/blog/bring-your-on-prem-data-to-cloud/',
+        title: 'Monitor your existing on-prem customers in AWS',
+        publishDate: '23rd July 2021',
+        date: '2021-06-23',
+        excerpt: 'dude you can do this',
+        status: 'published',
+        readMins: 9,
+        tags: [ 'aws', 'digitata']
+    },
+
+    {
         url: '/blog/how-to-speed-up-your-bespoke-machine-learning-algorithms-by-up-to-100x/',
         title: 'How to speed up your bespoke machine learning algorithms by up to 100x',
         publishDate: '19th April 2021',
