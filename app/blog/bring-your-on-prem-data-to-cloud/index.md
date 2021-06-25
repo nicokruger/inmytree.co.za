@@ -22,9 +22,19 @@ VPC and Lambda.
 
 ## What we built
 
+<figure>
+<img src="../../resources/cloudwatch-cdk-customers-array.png" class="block mx-auto" alt="Each Customer gets a step function and alarms">
+</figure>
+
 A fully infrastructure-as-code operational monitoring stack that uses AWS Step Functions and your
 VPC to run lambda functions that connect to your on-premise databases, runs queries and
 stores them as CloudWatch metrics on any time interval you want. We use 5-minute and 30-minute intervals.
+
+Each entry in the customers array creates a Step Function state machine that runs query for that customer, given details such as IP, port etc. An example of a customer state machine looks like this:
+
+<figure>
+<img src="../../resources/cloudwatch-cdk-step-function-example.png" class="block mx-auto" alt="Each Customer gets a step function and alarms">
+</figure>
 
 Take advantage of normal CI/CD practices, to also *manage your operational alarms and
 metrics*. This means you use IaC to describe your *entire alarming stack*.
