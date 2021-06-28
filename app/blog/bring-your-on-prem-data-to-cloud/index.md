@@ -29,40 +29,7 @@ A fully infrastructure-as-code operational monitoring stack that uses AWS Step F
 VPC to run lambda functions that connect to your on-premise databases, runs queries and
 stores them as CloudWatch metrics on any time interval you want.
 
-Each entry in the customers array creates a Step Function state machine that runs query for that customer, given details such as IP, port etc. An example of a customer state machine looks like this:
-
-<figure>
-<img src="../../resources/cloudwatch-cdk-step-function-example.png" class="block mx-auto" alt="Each Customer gets a step function and alarms">
-</figure>
-
-Take advantage of normal CI/CD practices, to also *manage your operational alarms and
-metrics*. This means you use IaC to describe your *entire alarming stack*.
-
-To add a new alarm, you change the CDK stack and commit. A pipeline then runs and updates
-the CloudFormation Stack. To change the threshold of an alarm, you follow the same
-process. You do *not* change anything on the AWS console. No alarms are added or modified
-there.
-
-## Why Step Functions?
-
-The two main reasons we settled on using Step Functions are:
-
-  - For observability purposes. If there is a problem during data fetching, it is possible to alarm on this failure as well. Additionally, you can go back end review past executions to why they failed.
-  - To block concurrent executions to the same customer. If for whatever reason, the database is taking a long time to execute any of your queries, we immediately fail the following execution so as to not start any more queries.
-
-The combination of these two reasons have proven to be invaluable in terms of false positives and trust in the alarms. When a state machine fails, that also produces a CloudWatch metric which you can alarm on. We then use Composite Alarms to only fire actual alarms when the Data Loading alarm is not active.
-
-This allows us to get one alarm if there are any database / VPN issues, instead of 10's of alarms all firing at the same time.
-
-## Prerequisities
-
-- VPC setup in your AWS account(s) that can connect to your on-premise databases.
-- A set of queries that pulls your important metrics. These queries will be run
-  in parallel on a schedule through Step Functions.
-- (optional, but recommended) a seperate AWS account to house your monitoring
-  infrastructure if you are using Organizations.
-
-## How does it work
+## How did we build it
 
 By combining the following building blocks:
 - [Step Functions](https://aws.amazon.com/step-functions/?step-functions.sort-by=item.additionalFields.postDateTime&step-functions.sort-order=desc) is a serverless state machine that allows you to create workflows. These workflows can be triggered manually or automatically - in our case, on a schedule through [Amazon EventBridge](https://aws.amazon.com/eventbridge/)
@@ -81,6 +48,40 @@ And that's basically it. That covers the main flow. From the stack, you also get
  - Data Loading alarms - if a customer DB is down for example, you get one alarm instead of all alarms firing at the same time.
  - An overview Dashboard showing all customers, alarms and metrics.
  - The ability to configure *quiet times* - during which an alarm will be disabled.
+
+
+Each entry in the customers array creates a Step Function state machine that runs query for that customer, given details such as IP, port etc. An example of a customer state machine looks like this:
+
+Take advantage of normal CI/CD practices, to also *manage your operational alarms and
+metrics*. This means you use IaC to describe your *entire alarming stack*.
+
+To add a new alarm, you change the CDK stack and commit. A pipeline then runs and updates
+the CloudFormation Stack. To change the threshold of an alarm, you follow the same
+process. You do *not* change anything on the AWS console. No alarms are added or modified
+there.
+
+## Why Step Functions?
+
+The two main reasons we settled on using Step Functions are:
+
+  - For observability purposes. If there is a problem during data fetching, it is possible to alarm on this failure as well. Additionally, you can go back end review past executions to why they failed.
+  - To block concurrent executions to the same customer. If for whatever reason, the database is taking a long time to execute any of your queries, we immediately fail the following execution so as to not start any more queries.
+
+<figure>
+<img src="../../resources/cloudwatch-cdk-step-function-example.png" class="block mx-auto" alt="Each Customer gets a step function and alarms">
+</figure>
+
+The combination of these two reasons have proven to be invaluable in terms of false positives and trust in the alarms. When a state machine fails, that also produces a CloudWatch metric which you can alarm on. We then use Composite Alarms to only fire actual alarms when the Data Loading alarm is not active.
+
+This allows us to get one alarm if there are any database / VPN issues, instead of 10's of alarms all firing at the same time.
+
+## Prerequisities
+
+- VPC setup in your AWS account(s) that can connect to your on-premise databases.
+- A set of queries that pulls your important metrics. These queries will be run
+  in parallel on a schedule through Step Functions.
+- (optional, but recommended) a seperate AWS account to house your monitoring
+  infrastructure if you are using Organizations.
 
 ## CDK
 
