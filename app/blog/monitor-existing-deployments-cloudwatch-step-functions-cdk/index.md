@@ -20,7 +20,7 @@ head:
     content: "Taking advantage of AWS Free Tier, you can host your own blog for free. Using basic AWS services, it can also auto-update whenever you commit markdown to a GitHub repo."
 - - meta
   - property: "og:image"
-    content: "https://www.inmytree.co.za/social/aws-deploy-blog.png"
+    content: "https://www.inmytree.co.za/social/blog_cloudwatch_cdk.png"
 - - meta
   - property: "twitter:card"
     content: "summary_large_image"
@@ -35,7 +35,7 @@ head:
     content: "Taking advantage of AWS Free Tier, you can host your own blog for free. Using basic AWS services, it can also auto-update whenever you commit markdown to a GitHub repo."
 - - meta
   - property: "twitter:image"
-    content: "https://www.inmytree.co.za/social/aws-deploy-blog.png"
+    content: "https://www.inmytree.co.za/social/blog_cloudwatch_cdk.png"
 ---
 <figure>
 <img src="../../resources/cloudwatch-cdk-drake.png" class="block mx-auto" alt="Each Customer gets a step function and alarms">
