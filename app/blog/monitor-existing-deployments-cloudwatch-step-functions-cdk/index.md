@@ -17,7 +17,7 @@ head:
     content: 'Monitor all your existing deployments with CloudWatch, Step Functions and CDK'
 - - meta
   - property: "og:description"
-    content: "Taking advantage of AWS Free Tier, you can host your own blog for free. Using basic AWS services, it can also auto-update whenever you commit markdown to a GitHub repo."
+    content: "How we are pulling all our important on-premise metrics/KPI's into CloudWatch using a robust, serverless and low-cost approach by leveraging Step Functions, CDK, your VPC and Lambda."
 - - meta
   - property: "og:image"
     content: "https://www.inmytree.co.za/social/blog_cloudwatch_cdk.png"
@@ -29,10 +29,10 @@ head:
     content: "https://www.inmytree.co.za/monitor-existing-deployments-cloudwatch-step-functions-cdk/"
 - - meta
   - property: "twitter:title"
-    content: "Deploy a simple blog on Cloudfront/S3 with AWS Pipelines using CDK/Cloudformation"
+    content: "Monitor all your existing deployments with CloudWatch, Step Functions and CDK"
 - - meta
   - property: "twitter:description"
-    content: "Taking advantage of AWS Free Tier, you can host your own blog for free. Using basic AWS services, it can also auto-update whenever you commit markdown to a GitHub repo."
+    content: "How we are pulling all our important on-premise metrics/KPI's into CloudWatch using a robust, serverless and low-cost approach by leveraging Step Functions, CDK, your VPC and Lambda."
 - - meta
   - property: "twitter:image"
     content: "https://www.inmytree.co.za/social/blog_cloudwatch_cdk.png"
