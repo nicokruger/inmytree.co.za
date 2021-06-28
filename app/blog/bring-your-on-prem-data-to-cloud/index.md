@@ -11,18 +11,13 @@ head:
 </figure>
 
 
-So, you have some existing customers. They run on-premise. Either your premises, or in the
-case of the telecoms industry, on your customers' premises.
+So, you have some existing customers. They run on-premise. Either your premises, or in the case of the telecoms industry, on your customers' premises.
 
-Maybe you have a centralised monitoring system already, maybe you're monitoring from each deployment 
-seperately, using something like Zabbix, nagios or such.
+Maybe you have a centralised monitoring system already, maybe you're monitoring from each deployment seperately, using something like Zabbix, nagios or such.
 
-You dream of a day where all your deployments run in AWS. Wouldn't that be nice? Then I could just use
-CloudWatch right? 
+You dream of a day where all your deployments run in AWS. Wouldn't that be nice? Then I could just use CloudWatch right?
 
-Stop dreaming, you can pull all your important on-premise metrics/KPI's into CloudWatch
-using a robust, serverless and low-cost approach by leveraging Step Functions, CDK, your
-VPC and Lambda.
+I'll show you how at [Digitata](https://vaitom.digitata.com), we are pulling all our important on-premise metrics/KPI's into CloudWatch using a robust, serverless and low-cost approach by leveraging Step Functions, CDK, your VPC and Lambda.
 
 ## What we built
 
@@ -48,6 +43,17 @@ the CloudFormation Stack. To change the threshold of an alarm, you follow the sa
 process. You do *not* change anything on the AWS console. No alarms are added or modified
 there.
 
+## Why Step Functions?
+
+The two main reasons we settled on using Step Functions are:
+
+  - For observability purposes. If there is a problem during data fetching, it is possible to alarm on this failure as well. Additionally, you can go back end review past executions to why they failed.
+  - To block concurrent executions to the same customer. If for whatever reason, the database is taking a long time to execute any of your queries, we immediately fail the following execution so as to not start any more queries.
+
+The combination of these two reasons have proven to be invaluable in terms of false positives and trust in the alarms. When a state machine fails, that also produces a CloudWatch metric which you can alarm on. We then use Composite Alarms to only fire actual alarms when the Data Loading alarm is not active.
+
+This allows us to get one alarm if there are any database / VPN issues, instead of 10's of alarms all firing at the same time.
+
 ## Prerequisities
 
 - VPC setup in your AWS account(s) that can connect to your on-premise databases.
@@ -64,6 +70,18 @@ By combining the following building blocks:
 - [CloudWatch](https://aws.amazon.com/cloudwatch/) as the monitoring service that stores the metrics received from the on-prem databases, manages the alarms and provides a dashboard.
 - [CDK](https://aws.amazon.com/cdk/) allows you to define your infrastrcture as code in your preferred progmming language.
 
+The flow is as follows:
+ - Every 5 minutes, a step function state machine is started for each customer.
+ - The Step Function state machines check if it is already running. If it is already running, it fails immediately.
+ - Otherwise, the Step Function executes all queries for the specific customer in parallel.
+ - After each query is completed, the resulting metric is stored in CloudWatch as a metric.
+
+And that's basically it. That covers the main flow. From the stack, you also get the following:
+
+ - Data Loading alarms - if a customer DB is down for example, you get one alarm instead of all alarms firing at the same time.
+ - An overview Dashboard showing all customers, alarms and metrics.
+ - The ability to configure *quiet times* - during which an alarm will be disabled.
+
 ## CDK
 
 The following CDK modules are utilised to create the stack:
@@ -76,104 +94,21 @@ The following CDK modules are utilised to create the stack:
 - [aws-events](https://docs.aws.amazon.com/cdk/api/latest/docs/aws-events-readme.html)
 - [aws-events-targets](https://docs.aws.amazon.com/cdk/api/latest/docs/aws-events-targets-readme.html)
 
-### Customers
-```ts
-enum Version {
-  v1 = "1",
-  v2 = "2"
-}
-
-type Customer = {
-  opname: string;
-  ip: string;
-  port: string;
-  database: string;
-  version: Version;
-  threshold: number;
-}
-
-const customers: Customer[] = [
-  {
-    opname: "Customer 1",
-    ip: "192.168.0.1",
-    port: "5432",
-    database: "postgres",
-    version: Version.v2,
-    threshold: 100
-  },
-  {
-    opname: "Customer 2",
-    ip: "192.168.0.2",
-    port: "5432",
-    database: "postgres",
-    version: Version.v1,
-    threshold: 100
-  }
-]
-
-export {
-  Version,
-  Customer,
-  customers
-}
-
-```
-
-```ts
-import { Version } from './customers';
-
-interface MetricsQuery {
-  name: string;
-  description: string;
-  versions: Version[];
-  query: string;
-  cloudwatchDimension: string;
-  tags: string[];
-}
-
-export const queries: MetricsQuery[] = [
-  {
-    name: 'demo-query',
-    description: 'A query for demo purposes',
-    tags: ['demo'],
-    versions: [Version.v1],
-    query: `
-    select row_to_json(row) from (
-       select random() as test_metric
-    ) row
-    `,
-    cloudwatchDimension: 'demo',
-  },
-  {
-    name: 'demo-query',
-    description: 'A query for demo purposes',
-    tags: ['demo'],
-    versions: [Version.v2],
-    query: `
-    select row_to_json(row) from (
-       select 5 + random() as test_metric
-    ) row
-    `,
-    cloudwatchDimension: 'demo',
-  },
-
-]
-
-```
-
 ## Advantages of this approach
 
 - Serverless - there is no infrastrcture for you to manage.
 - Leverages CloudWatch. If you are using AWS chances are good you are familiar with CloudWatch already.
 - Easy to add/modify alarms to all of your customers at once. Because it is leveraging IaC, this makes it easy to add/modify alarms to all of your customers at once.
 
-## Future
+## Example Stack
 
-You have 
+You can check out an example stack on [my github](https://github.com/cdk-cloudwatch-monitoring). The example stack requires a single dev RDS to be deployed to an account. From there, you can follow the steps in the repo to deploy a starter stack to get started with this approach.
+
+You will get a stack that consists of:
+
+ - Two "customers" - pulling sample data from your RDS.
+ - Two metrics - one per customer
+ - Two alarms - one per metric
+ - 3 Dashboards: Overview + one for each customer
 
 
-### Lal
-
-
-
-Hello
