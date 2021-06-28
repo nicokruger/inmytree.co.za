@@ -1,6 +1,6 @@
 export default [
     {
-        url: '/blog/bring-your-on-prem-data-to-cloud/',
+        url: '/blog/monitor-existing-deployments-cloudwatch-step-functions-cdk/',
         title: 'Monitor all your existing deployments with CloudWatch, Step Functions and CDK',
         publishDate: '23rd July 2021',
         date: '2021-06-23',

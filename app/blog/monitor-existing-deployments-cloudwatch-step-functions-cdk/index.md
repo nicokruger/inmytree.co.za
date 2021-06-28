@@ -11,7 +11,7 @@ head:
     content: "website"
 - - meta
   - property: "og:url"
-    content: "https://www.inmytree.co.za/deploy-a-simple-blog-on-cloudfronts3-with-aws-pipelines-using-cdkcloudformation/"
+    content: "https://www.inmytree.co.za/monitor-existing-deployments-cloudwatch-step-functions-cdk/"
 - - meta
   - property: "og:title"
     content: 'Monitor all your existing deployments with CloudWatch, Step Functions and CDK'
@@ -26,7 +26,7 @@ head:
     content: "summary_large_image"
 - - meta
   - property: "twitter:url"
-    content: "https://www.inmytree.co.za/deploy-a-simple-blog-on-cloudfronts3-with-aws-pipelines-using-cdkcloudformation/"
+    content: "https://www.inmytree.co.za/monitor-existing-deployments-cloudwatch-step-functions-cdk/"
 - - meta
   - property: "twitter:title"
     content: "Deploy a simple blog on Cloudfront/S3 with AWS Pipelines using CDK/Cloudformation"
