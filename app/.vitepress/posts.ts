@@ -1,10 +1,10 @@
 export default [
     {
         url: '/blog/bring-your-on-prem-data-to-cloud/',
-        title: 'Monitor your existing on-prem customers in AWS',
+        title: 'Monitor all your existing deployments with CloudWatch, Step Functions and CDK',
         publishDate: '23rd July 2021',
         date: '2021-06-23',
-        excerpt: 'dude you can do this',
+        excerpt: "How we are pulling all our important on-premise metrics/KPI's into CloudWatch using a robust, serverless and low-cost approach by leveraging Step Functions, CDK, your VPC and Lambda.",
         status: 'published',
         readMins: 9,
         tags: [ 'aws', 'digitata']

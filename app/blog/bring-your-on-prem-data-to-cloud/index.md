@@ -1,10 +1,41 @@
 ---
-title: "Monitor your existing on-prem customers in AWS"
-description: 'you can do this i promise'
+title: 'Monitor all your existing deployments with CloudWatch, Step Functions and CDK'
+description: "How we are pulling all our important on-premise metrics/KPI's into CloudWatch using a robust, serverless and low-cost approach by leveraging Step Functions, CDK, your VPC and Lambda."
 head:
 - - meta
   - name: description
-    content: "evs"
+    content: "How we are pulling all our important on-premise metrics/KPI's into CloudWatch using a robust, serverless and low-cost approach by leveraging Step Functions, CDK, your VPC and Lambda."
+
+- - meta
+  - property: "og:type"
+    content: "website"
+- - meta
+  - property: "og:url"
+    content: "https://www.inmytree.co.za/deploy-a-simple-blog-on-cloudfronts3-with-aws-pipelines-using-cdkcloudformation/"
+- - meta
+  - property: "og:title"
+    content: 'Monitor all your existing deployments with CloudWatch, Step Functions and CDK'
+- - meta
+  - property: "og:description"
+    content: "Taking advantage of AWS Free Tier, you can host your own blog for free. Using basic AWS services, it can also auto-update whenever you commit markdown to a GitHub repo."
+- - meta
+  - property: "og:image"
+    content: "https://www.inmytree.co.za/social/aws-deploy-blog.png"
+- - meta
+  - property: "twitter:card"
+    content: "summary_large_image"
+- - meta
+  - property: "twitter:url"
+    content: "https://www.inmytree.co.za/deploy-a-simple-blog-on-cloudfronts3-with-aws-pipelines-using-cdkcloudformation/"
+- - meta
+  - property: "twitter:title"
+    content: "Deploy a simple blog on Cloudfront/S3 with AWS Pipelines using CDK/Cloudformation"
+- - meta
+  - property: "twitter:description"
+    content: "Taking advantage of AWS Free Tier, you can host your own blog for free. Using basic AWS services, it can also auto-update whenever you commit markdown to a GitHub repo."
+- - meta
+  - property: "twitter:image"
+    content: "https://www.inmytree.co.za/social/aws-deploy-blog.png"
 ---
 <figure>
 <img src="../../resources/cloudwatch-cdk-drake.png" class="block mx-auto" alt="Each Customer gets a step function and alarms">
