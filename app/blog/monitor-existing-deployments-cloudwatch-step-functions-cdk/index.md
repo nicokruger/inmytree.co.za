@@ -126,9 +126,12 @@ To create data loading alarms for each customer, we simply create an alarm that 
 ## Quiet Time Alarms
 
 To simulate quiet times (a time period during which an alarm should be silenced), we have a lambda that runs on a schedule, and sets a CloudWatch metric to 0 if the customer is not in quiet time, or 1 if the customer is in quiet time. We then create an alarm that fires when that value is 1, ie. when the customer is in quiet time. It looks like this:
+
 <figure>
 <img src="../../resources/quiet-time-alarm.png" class="block mx-auto" alt="Example of quiet time alarm">
 </figure>
+
+While the metric is 1, this alarm fires. When it is 0, it is in OK state.
 
 ## Composite Alarms
 
