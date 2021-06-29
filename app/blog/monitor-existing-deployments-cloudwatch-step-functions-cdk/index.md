@@ -207,12 +207,12 @@ You will get a stack that consists of:
 Some of the added functionality that we have added to the stack:
 
  - Alarming to OpsGenie by using SNS topics that integrates with OpsGenie.
- - Different levels of alarms
- - CloudWatch Anomaly Detection
+ - Different levels of alarms. Depending on level notifications go to relevant teams.
+ - CloudWatch Anomaly Detection.
 
 ## Future
 
- - Lookout for Metrics
- - Connect to more types of databases
- - Real time data from Kafka
+ - Automating our Lookout for Metrics as part of this stack.
+ - Connect to more types of databases.
+ - Real time data from Kafka.
  - Can this replace our quiet time feature? [CloudWatch Adds New Metric Math Functions](https://aws.amazon.com/about-aws/whats-new/2021/06/cloudwatch-adds-new-metric-math-functions/)
