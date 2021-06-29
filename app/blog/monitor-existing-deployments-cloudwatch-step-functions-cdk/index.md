@@ -53,7 +53,7 @@ I'll show you how at [Digitata](https://vaitom.digitata.com), we are pulling all
 ## What we built
 
 <figure>
-<img src="../../resources/cloudwatch-cdk-customers-array.png" class="block mx-auto" alt="Each Customer gets a step function and alarms">
+<img src="../../resources/cloudwatch-cdk-customers-array.png" class="block mx-auto" alt="High-level Diagram">
 </figure>
 
 A fully infrastructure-as-code operational monitoring stack that uses AWS Step Functions and your
@@ -73,18 +73,24 @@ The flow is as follows:
  - The Step Function state machines check if it is already running. If it is already running, it fails immediately.
  - Otherwise, the Step Function executes all queries for the specific customer in parallel.
  - After each query is completed, the resulting metric is stored in CloudWatch as a metric.
+ - Additionally, the execution state of the State Machine itself is available as CloudWatch as a metric.
 
-And that's basically it. That covers the main flow. From the stack, you also get the following:
+That covers the main flow. From the stack, you also get the following:
 
- - Data Loading alarms - if a customer DB is down for example, you get one alarm instead of all alarms firing at the same time.
+ - A number of alarms on your metrics.
  - An overview Dashboard showing all customers, alarms and metrics.
+ - Data Loading alarms - if a customer DB is down for example, you get one alarm instead of all alarms firing at the same time.
+   More about this later.
  - The ability to configure *quiet times* - during which an alarm will be disabled.
+   More about this later.
 
+## Advantages of this approach
 
-Each entry in the customers array creates a Step Function state machine that runs query for that customer, given details such as IP, port etc. An example of a customer state machine looks like this:
-
-Take advantage of normal CI/CD practices, to also *manage your operational alarms and
-metrics*. This means you use IaC to describe your *entire alarming stack*.
+- Take advantage of normal CI/CD practices, to also *manage your operational alarms and
+  metrics*. This means you use IaC to describe your *entire alarming stack*.
+- Serverless - there is no infrastrcture for you to manage.
+- Leverages CloudWatch. If you are using AWS chances are good you are familiar with CloudWatch already.
+- Easy to add/modify alarms to all of your customers at once. Because it is leveraging IaC, this makes it easy to add/modify alarms to all of your customers at once.
 
 To add a new alarm, you change the CDK stack and commit. A pipeline then runs and updates
 the CloudFormation Stack. To change the threshold of an alarm, you follow the same
@@ -99,12 +105,53 @@ The two main reasons we settled on using Step Functions are:
   - To block concurrent executions to the same customer. If for whatever reason, the database is taking a long time to execute any of your queries, we immediately fail the following execution so as to not start any more queries.
 
 <figure>
-<img src="../../resources/cloudwatch-cdk-step-function-example.png" class="block mx-auto" alt="Each Customer gets a step function and alarms">
+<img src="../../resources/cloudwatch-cdk-step-function-example.png" class="block mx-auto" alt="Example of step function">
 </figure>
 
 The combination of these two reasons have proven to be invaluable in terms of false positives and trust in the alarms. When a state machine fails, that also produces a CloudWatch metric which you can alarm on. We then use Composite Alarms to only fire actual alarms when the Data Loading alarm is not active.
 
 This allows us to get one alarm if there are any database / VPN issues, instead of 10's of alarms all firing at the same time.
+
+## Data Loading Alarms
+
+To create data loading alarms for each customer, we simply create an alarm that monitors the amount of step function state machine failures for that customer. Such as:
+
+<figure>
+<img src="../../resources/data-loading-alarm.png" class="block mx-auto" alt="Example of data loading alarm">
+</figure>
+
+## Quiet Time Alarms
+
+To simulate quiet times (a time period during which an alarm should be silenced), we have a lambda that runs on a schedule, and sets a CloudWatch metric to 0 if the customer is not in quiet time, or 1 if the customer is in quiet time. We then create an alarm that fires when that value is 1, ie. when the customer is in quiet time. It looks like this:
+<figure>
+<img src="../../resources/quiet-time-alarm.png" class="block mx-auto" alt="Example of quiet time alarm">
+</figure>
+
+## Composite Alarms
+
+A big part of reducing the number of alarms, say in case there is a connectivity problem to one of the databases is to leverage [CloudWatch Composite Alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Create_Composite_Alarm.html). We use Composite Alarms to reduce alarm noise in the following ways:
+ - Raise fewer alarms when there are connectivity / database issues.
+ - Setup quiet times during which period certain alarms for a customer will not fire. A quiet time period is simply configured by a start and end hour.
+
+Each KPI alarm is actually a combination of other alarms. It looks like this:
+
+```
+kpi_alarm = NOT(data_loading) and NOT(quiet_time) and inner_kpi_alarm
+```
+
+So for each KPI, we setup two alarms. One, called the "inner" alarm is the actual alarm that watches the metric. We do not configure any notifications in CloudWatch from the inner alarm. We then configure notifications only on "kpi_alarm" in the above case. This means that we only get notifications for alarms on the above kpi when the following conditions are met:
+
+ - There is no data_loading alarm on the customer.
+ - The customer is not in quiet time.
+ - The actual kpi alarm is firing.
+
+An example of an alarm:
+<figure>
+<img src="../../resources/example-alarm.png" class="block mx-auto" alt="Example of alarm">
+</figure>
+
+So the alarm "Customer 2: Demo Alarm2" will only fire when there are no data loading issues and the customer is not in quiet time. Perfect to reduce noise! You can easily setup CloudWatch notifications (also through CDK) on this alarm and know that you will be only be alerted when your attention is required.
+
 
 ## Prerequisities
 
@@ -126,15 +173,9 @@ The following CDK modules are utilised to create the stack:
 - [aws-events](https://docs.aws.amazon.com/cdk/api/latest/docs/aws-events-readme.html)
 - [aws-events-targets](https://docs.aws.amazon.com/cdk/api/latest/docs/aws-events-targets-readme.html)
 
-## Advantages of this approach
-
-- Serverless - there is no infrastrcture for you to manage.
-- Leverages CloudWatch. If you are using AWS chances are good you are familiar with CloudWatch already.
-- Easy to add/modify alarms to all of your customers at once. Because it is leveraging IaC, this makes it easy to add/modify alarms to all of your customers at once.
-
 ## Example Stack
 
-You can check out an example stack on [my github](https://github.com/cdk-cloudwatch-monitoring). The example stack requires a single dev RDS to be deployed to an account. From there, you can follow the steps in the repo to deploy a starter stack to get started with this approach.
+You can check out an example stack on [my github](https://github.com/nicokruger/cdk-cloudwatch-monitoring). The example stack requires a single dev RDS to be deployed to an account. From there, you can follow the steps in the repo to deploy a starter stack to get started with this approach.
 
 You will get a stack that consists of:
 
@@ -143,4 +184,17 @@ You will get a stack that consists of:
  - Two alarms - one per metric
  - 3 Dashboards: Overview + one for each customer
 
+## Additional Functionality
 
+Some of the added functionality that we have added to the stack:
+
+ - Alarming to OpsGenie by using SNS topics that integrations with OpsGenie.
+ - Different levels of alarms
+ - CloudWatch Anomaly Detection
+
+## Future
+
+ - Lookout for Metrics
+ - Connect to more types of databases
+ - Real time data from Kafka
+ - Can this replace our quiet time feature? [CloudWatch Adds New Metric Math Functions](https://aws.amazon.com/about-aws/whats-new/2021/06/cloudwatch-adds-new-metric-math-functions/)
