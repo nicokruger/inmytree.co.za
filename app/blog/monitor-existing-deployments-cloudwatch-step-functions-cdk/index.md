@@ -50,6 +50,9 @@ You dream of a day where all your deployments run in AWS. Wouldn't that be nice?
 
 I'll show you how at [Digitata](https://vaitom.digitata.com), we are pulling all our important on-premise metrics/KPI's into CloudWatch using a robust, serverless and low-cost approach by leveraging Step Functions, CDK, your VPC and Lambda.
 
+[Click here for a complete sample project](https://github.com/nicokruger/cdk-cloudwatch-monitoring) - the example project will get you up and running in no time. Read through the description of what we did and why we did it on the blog here.
+
+
 ## What we built
 
 <figure>
