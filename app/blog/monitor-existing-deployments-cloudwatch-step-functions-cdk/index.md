@@ -81,6 +81,7 @@ The flow is as follows:
 That covers the main flow. From the stack, you also get the following:
 
  - A number of alarms on your metrics.
+ - Optional CloudWatch Anomaly Detection models
  - An overview Dashboard showing all customers, alarms and metrics.
  - Data Loading alarms - if a customer DB is down for example, you get one alarm instead of all alarms firing at the same time.
    More about this later.
@@ -114,6 +115,17 @@ The two main reasons we settled on using Step Functions are:
 The combination of these two reasons have proven to be invaluable in terms of false positives and trust in the alarms. When a state machine fails, that also produces a CloudWatch metric which you can alarm on. We then use Composite Alarms to only fire actual alarms when the Data Loading alarm is not active.
 
 This allows us to get one alarm if there are any database / VPN issues, instead of 10's of alarms all firing at the same time.
+
+## Anomaly Detection
+
+Using [CloudWatch Anomaly Detection](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Anomaly_Detection.html), you can also easily add anomaly detection functionality on your metrics through CloudFormation/CDK. An example looks like this:
+
+<figure>
+<img src="../../resources/cloudwatch-anomaly-model.png" class="block mx-auto" alt="Example of CloudWatch anomaly model">
+</figure>
+
+Anomaly detection allows you to quickly react to anomalous behaviour in your system - freeing you from coming up with hard limits, which are not always applicable and often leads you to compromise (think of sales, which are generally quite low during the early morning hours.)
+
 
 ## Data Loading Alarms
 
