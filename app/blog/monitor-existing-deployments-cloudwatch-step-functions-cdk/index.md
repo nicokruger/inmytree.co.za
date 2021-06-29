@@ -46,7 +46,7 @@ So, you have some existing customers. They run on-premise. Either your premises,
 
 Maybe you have a centralised monitoring system already, maybe you're monitoring from each deployment separately, using something like Zabbix, nagios or such.
 
-You dream of a day where all your deployments run in AWS. Wouldn't that be nice? Then I could just use CloudWatch right?
+You dream of a day where all your deployments run in AWS. Wouldn't that be nice? But until then, being proactive on your alarming is just as important as ever.
 
 I'll show you how at [Digitata](https://vaitom.digitata.com), we are pulling all our important on-premise metrics/KPI's into CloudWatch using a robust, serverless and low-cost approach by leveraging Step Functions, CDK, your VPC and Lambda.
 
