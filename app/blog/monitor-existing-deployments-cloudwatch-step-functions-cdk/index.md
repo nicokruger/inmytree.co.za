@@ -42,7 +42,7 @@ head:
 </figure>
 
 
-So, you have some existing customers. They run on-premise. Either your premises, or in the case of the telecoms industry, on your customers' premises.
+So, you have some existing customers. They run on-premise. Either your premises, or in some cases on your customers' premises.
 
 Maybe you have a centralised monitoring system already, maybe you're monitoring from each deployment seperately, using something like Zabbix, nagios or such.
 
@@ -206,7 +206,7 @@ You will get a stack that consists of:
 
 Some of the added functionality that we have added to the stack:
 
- - Alarming to OpsGenie by using SNS topics that integrations with OpsGenie.
+ - Alarming to OpsGenie by using SNS topics that integrates with OpsGenie.
  - Different levels of alarms
  - CloudWatch Anomaly Detection
 
