@@ -3,7 +3,7 @@ export default [
         url: '/blog/monitor-existing-deployments-cloudwatch-step-functions-cdk/',
         title: 'Monitor all your existing deployments with CloudWatch, Step Functions and CDK',
         publishDate: '23rd July 2021',
-        date: '2021-06-23',
+        date: '2021-06-29',
         excerpt: "How we are pulling all our important on-premise metrics/KPI's into CloudWatch using a robust, serverless and low-cost approach by leveraging Step Functions, CDK, your VPC and Lambda.",
         status: 'published',
         readMins: 9,
