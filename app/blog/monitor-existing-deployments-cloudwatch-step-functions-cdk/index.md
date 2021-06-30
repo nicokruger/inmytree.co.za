@@ -44,9 +44,9 @@ head:
 
 So, you have some existing customers. They run on-premise. Either your premises, or in some cases on your customers' premises.
 
-Maybe you have a centralised monitoring system already, maybe you're monitoring from each deployment seperately, using something like Zabbix, nagios or such.
+Maybe you have a centralised monitoring system already, maybe you're monitoring from each deployment separately, using something like Zabbix, nagios or such.
 
-You dream of a day where all your deployments run in AWS. Wouldn't that be nice? Then I could just use CloudWatch right?
+You dream of a day where all your deployments run in AWS. Wouldn't that be nice? But until then, being proactive on your alarming is just as important as ever.
 
 I'll show you how at [Digitata](https://vaitom.digitata.com), we are pulling all our important on-premise metrics/KPI's into CloudWatch using a robust, serverless and low-cost approach by leveraging Step Functions, CDK, your VPC and Lambda.
 
@@ -69,7 +69,7 @@ By combining the following building blocks:
 - [Step Functions](https://aws.amazon.com/step-functions/?step-functions.sort-by=item.additionalFields.postDateTime&step-functions.sort-order=desc) is a serverless state machine that allows you to create workflows. These workflows can be triggered manually or automatically - in our case, on a schedule through [Amazon EventBridge](https://aws.amazon.com/eventbridge/)
 - [Lambda](https://aws.amazon.com/lambda/) is used to run the queries against the on-prem database (using python in our case.)
 - [CloudWatch](https://aws.amazon.com/cloudwatch/) as the monitoring service that stores the metrics received from the on-prem databases, manages the alarms and provides a dashboard.
-- [CDK](https://aws.amazon.com/cdk/) allows you to define your infrastrcture as code in your preferred progmming language.
+- [CDK](https://aws.amazon.com/cdk/) allows you to define your infrastructure as code in your preferred progmming language.
 
 The flow is as follows:
  - Every 5 minutes, a step function state machine is started for each customer.
@@ -92,7 +92,7 @@ That covers the main flow. From the stack, you also get the following:
 
 - Take advantage of normal CI/CD practices, to also *manage your operational alarms and
   metrics*. This means you use IaC to describe your *entire alarming stack*.
-- Serverless - there is no infrastrcture for you to manage.
+- Serverless - there is no infrastructure for you to manage.
 - Leverages CloudWatch. If you are using AWS chances are good you are familiar with CloudWatch already.
 - Easy to add/modify alarms to all of your customers at once. Because it is leveraging IaC, this makes it easy to add/modify alarms to all of your customers at once.
 
@@ -171,12 +171,12 @@ An example of an alarm:
 So the alarm "Customer 2: Demo Alarm2" will only fire when there are no data loading issues and the customer is not in quiet time. Perfect to reduce noise! You can easily setup CloudWatch notifications (also through CDK) on this alarm and know that you will be only be alerted when your attention is required.
 
 
-## Prerequisities
+## Prerequisites
 
 - VPC setup in your AWS account(s) that can connect to your on-premise databases.
 - A set of queries that pulls your important metrics. These queries will be run
   in parallel on a schedule through Step Functions.
-- (optional, but recommended) a seperate AWS account to house your monitoring
+- (optional, but recommended) a separate AWS account to house your monitoring
   infrastructure if you are using Organizations.
 
 ## CDK
@@ -207,12 +207,12 @@ You will get a stack that consists of:
 Some of the added functionality that we have added to the stack:
 
  - Alarming to OpsGenie by using SNS topics that integrates with OpsGenie.
- - Different levels of alarms
- - CloudWatch Anomaly Detection
+ - Different levels of alarms. Depending on level notifications go to relevant teams.
+ - CloudWatch Anomaly Detection.
 
 ## Future
 
- - Lookout for Metrics
- - Connect to more types of databases
- - Real time data from Kafka
+ - Automating our Lookout for Metrics as part of this stack.
+ - Connect to more types of databases.
+ - Real time data from Kafka.
  - Can this replace our quiet time feature? [CloudWatch Adds New Metric Math Functions](https://aws.amazon.com/about-aws/whats-new/2021/06/cloudwatch-adds-new-metric-math-functions/)
