@@ -130,7 +130,7 @@ The above setup lends itself well to the current state of working in VR - the ab
 
 All of this will become better over time as more peripherals are brought into VR, such as the [Logitech K830 Keyboard](https://www.takealot.com/logitech-k830-illuminated-living-room-keyboard/PLID33052364).
 
-### Conclusion and Thoughts
+## Conclusion and Thoughts
 
 If you're not interested in reading through my diary below (and I don't blame you) and just want my thoughts so far:
 
@@ -157,18 +157,23 @@ The potential here is amazing and I am convinced that this is something I will d
 
 ---
 
-### Next Steps
+## Next Steps
 
 - For the next couple of weeks I am going to focus on meetings and presentations in VR with my coworkers. Apps like [MeetinVR](https://www.meetinvr.com/), [Spatial](https://spatial.io/) show massive potential in this space.
 
 - Continuously try to improve my work setup. The obvious next step is to wire CAT-6 to my desktop and get rid of Ethernet over Power (more on that in diary below)
 
-## My rough Diary
+### My rough Diary
+Below my diary with notes I took as I was going through the experience. Much more detailed information provided here for anyone interested in trying this for themselves.
+
+<div id="vr-diary" class="break-normal">
+
+```markdown
 ### Day 1
 
-Got the quest. Installed and setup everything up. The initial on-boarding experience from the tutorials is absolutely amazing. The visual quality of the Quest 2 is far beyond anything I've experienced in VR so far - specifically compared to the earlier models like the Rift DK that we played with in 2017.
+Got the quest. Installed and set everything up. The initial on-boarding experience from the tutorials is absolutely amazing. The visual quality of the Quest 2 is far beyond anything I've experienced in VR so far - specifically compared to the earlier models like the Rift DK2 that I played with.
 
-The advantage of the headset being wireless is immediately apparent. Walking around in VR is an experience that is completely overwhelming and amazing. Being able to so move around and change your "play area" is incredibly useful and convenient.
+The advantage of the headset being wireless is immediately apparent. Walking around in VR is an experience that is completely overwhelming and amazing. Being able to move around and change your "play area" is incredibly useful and convenient.
 
 You can stream the headset to Chromecast if you have one.
 
@@ -217,3 +222,7 @@ Additionally, start looking into MeetVR. I want to prepare a meeting/presentatio
 ### Day 7
 
 My Desktop PC starts overheating when I do very heavy workloads: 4 screens + the virtual webcam + meetings over google meet/slack. This has been a weakness in my Dekstop PC for a while now as the PC ages but again VR is quite good at highlighting weaknesses in your setup!
+
+```
+
+</div>

@@ -67,3 +67,28 @@
   margin-bottom: -.4rem;
   font-weight: 600;
 }
+
+#vr-diary code {
+  font-size: 1rem;
+  white-space: pre-wrap !important;       /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap !important;      /* Opera 4-6 */
+  white-space: -o-pre-wrap !important;    /* Opera 7 */
+  word-wrap: break-word !important;       /* Internet Explorer 5.5+ */
+}
+
+#vr-diary pre {
+  font-size: 1rem;
+  white-space: pre-wrap !important;       /* Since CSS 2.1 */
+  white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+  white-space: -pre-wrap !important;      /* Opera 4-6 */
+  white-space: -o-pre-wrap !important;    /* Opera 7 */
+  word-wrap: break-word !important;       /* Internet Explorer 5.5+ */
+}
+
+#vr-diary {
+  font-size: 24px;
+}
+#vr-diary {
+  font-size: 24px;
+}
