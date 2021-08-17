@@ -89,23 +89,36 @@ This is the thing I miss the most. Working together in small groups hunched over
 ### Some screenshots
 
 <div class="md:flex md:flex-row">
-<figure class="w-96 h-96 m-1">
-<img src="../../resources/immersed-meeting.jpg" class="block mx-auto" alt="A company meeting">
-</figure>
 
-<figure class="w-96 h-96 m-1">
-<img src="../../resources/meetinvr-whiteboard.jpg" class="block mx-auto" alt="Trying to draw">
-</figure>
+  <figure class="w-96 h-96 m-1">
+    <iframe class="block mx-auto" src="https://www.youtube.com/embed/mWYdQuVMBa0" frameborder="0" allowfullscreen></iframe>
+  </figure>
+
+  <figure class="w-96 h-96 m-1">
+    <iframe class="block mx-auto" src="https://www.youtube.com/embed/W4reI1N76X4" frameborder="0" allowfullscreen></iframe>
+  </figure>
+
+
 </div>
 
 <div class="md:flex md:flex-row">
-<figure class="w-96 h-96 m-1">
-<img src="../../resources/vrdesktop.png" class="block mx-auto" alt="Virtual Desktop">
-</figure>
+  <figure class="w-96 h-96 m-1">
+    <img src="../../resources/immersed-meeting.jpg" class="block mx-auto" alt="A company meeting">
+  </figure>
 
-<figure class="w-96 h-96 m-1">
-<img src="../../resources/spacevr.png" class="block mx-auto" alt="Working in space">
-</figure>
+  <figure class="w-96 h-96 m-1">
+    <img src="../../resources/meetinvr-whiteboard.jpg" class="block mx-auto" alt="Trying to draw">
+  </figure>
+</div>
+
+<div class="md:flex md:flex-row">
+  <figure class="w-96 h-96 m-1">
+    <img src="../../resources/vrdesktop.png" class="block mx-auto" alt="Virtual Desktop">
+  </figure>
+
+  <figure class="w-96 h-96 m-1">
+    <img src="../../resources/spacevr.png" class="block mx-auto" alt="Working in space">
+  </figure>
 </div>
 
 
