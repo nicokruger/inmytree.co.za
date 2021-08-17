@@ -39,7 +39,7 @@ head:
 
 ---
 
-Like many of you, my morning starts with coffee, catching up on news and then getting into work: Read/reply to emails, look at my calendar, plan my day and then move on to work tasks.
+Like many of you, my morning starts with coffee, catching up on news and then getting into work: Reading/replying to emails, looking at my calendar, planning my day and then moving on to work tasks. Pretty normal morning routine, right?
 
 Except that for the last week, I've been doing the above in a magical cave, a log cabin overlooking a mountain, a space station orbiting the Earth, and many more exotic locations.
 
