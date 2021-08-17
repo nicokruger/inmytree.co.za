@@ -95,13 +95,13 @@ This is the thing I miss the most. Working together in small groups hunched over
 
 ### Videos
 
-<div class="md:flex md:flex-row">
+<div class="md:grid md:grid-cols-2 md:gap-1">
 
-  <figure class="w-96 h-96 md:m-1">
+  <figure class="contain">
     <iframe class="block mx-auto" src="https://www.youtube.com/embed/mWYdQuVMBa0" frameborder="0" allowfullscreen></iframe>
   </figure>
 
-  <figure class="w-96 h-96 md:m-1">
+  <figure class="contain">
     <iframe class="block mx-auto" src="https://www.youtube.com/embed/W4reI1N76X4" frameborder="0" allowfullscreen></iframe>
   </figure>
 
@@ -111,22 +111,22 @@ This is the thing I miss the most. Working together in small groups hunched over
 
 ### Screenshots
 
-<div class="md:flex md:flex-row">
-  <figure class="w-96 h-96 md:m-1">
+<div class="md:grid md:grid-cols-2 md:gap-1">
+  <figure class="contain">
     <img src="../../resources/vrdesktop.png" class="block mx-auto" alt="Virtual Desktop">
   </figure>
 
-  <figure class="w-96 h-96 md:m-1">
+  <figure class="contain">
     <img src="../../resources/spacevr.png" class="block mx-auto" alt="Working in space">
   </figure>
 </div>
 
-<div class="md:flex md:flex-row">
-  <figure class="w-96 h-96 md:m-1">
+<div class="md:grid md:grid-cols-2 md:gap-1">
+  <figure class="contain">
     <img src="../../resources/immersed-meeting.jpg" class="block mx-auto" alt="A company meeting">
   </figure>
 
-  <figure class="w-96 h-96 md:m-1">
+  <figure class="contain">
     <img src="../../resources/meetinvr-whiteboard.jpg" class="block mx-auto" alt="Trying to draw">
   </figure>
 </div>
