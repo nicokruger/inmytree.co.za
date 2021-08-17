@@ -75,8 +75,14 @@ Under the following conditions:
  - You have as strong PC/Laptop connected over ethernet to your LAN (preferably 1gbps LAN connection, but I have gotten away so far with less with some slow down when sharing larger screens).
  - Your day to work doesn't require you to interact with your phone. There are ways to get your phone into VR, but I haven't gotten any of them to work thus far (I also didn't try that hard, as my day-to-day does not require me to take customer calls etc.)
 
+ Some cool benefits I found:
+  - I need less space on my desk because I don't need physical screens anymore.
+  - I can actually read the text in VR without my glasses. I still get fatigue without them buy at least I can read the text without glasses!
+  - In the mornings I get glare in my home office from the morning sun. When I am in VR this is not an issue - but is quite striking when I take the headset off and have to deal with the glare on my main monitor afterwards!
+  - I completely and utterly lose track of time. It really does help me to focus.
+
 ---
-I believe that working in VR in a solo fashion is **already** _at least as productive_ as working normally, with a tendency to actually _make you more productive_.
+I believe that working in VR in a solo fashion is **already** _at least as productive_ as working normally, with a tendency to actually _make you more productive_ depending on circumstances.
 ---
 
 The potential here is amazing and I am convinced that this is something I will do on a regular basis going forward.
