@@ -68,6 +68,11 @@
     Personal
   </span>
 
+  <span v-if="post.tags.indexOf('vr') >= 0" class="mr-2">
+
+    <img src="/resources/oculus.jpg" height="20" loading="lazy" alt="VR" style="height: 20px; margin-top: 0 !important; margin-bottom: 0 !important;" class="inline rounded-full object-center object-cover" />
+  </span>
+
 </div>
 </template>
 

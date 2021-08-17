@@ -7,7 +7,7 @@ export default [
         excerpt: "My morning starts with coffee, catching up on news and then getting into work. Except that for the last week, I've been doing the above in a magical cave, a log cabin overlooking a mountain, a space station orbiting the Earth, and many more exotic locations. I've been working in Virtual Reality for the last week.",
         status: 'published',
         readMins: 6,
-        tags: [ 'vr', 'digitata']
+        tags: [ 'vr', 'digitata', 'personal']
     },
     {
         url: '/blog/monitor-existing-deployments-cloudwatch-step-functions-cdk/',
