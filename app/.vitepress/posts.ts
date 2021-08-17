@@ -1,10 +1,10 @@
 export default [
     {
         url: '/blog/vr/',
-        title: 'Visting the future every morning - working in Virtual Reality',
+        title: 'Visting the future every morning - working in Virtual Reality part 1.',
         publishDate: '16th August 2021',
         date: '2021-08-16',
-        excerpt: "For the last week I've been working in VR for at least an hour a day. Find out about my experience here",
+        excerpt: "My morning starts with coffee, catching up on news and then getting into work. Except that for the last week, I've been doing the above in a magical cave, a log cabin overlooking a mountain, a space station orbiting the Earth, and many more exotic locations. I've been working in Virtual Reality for the last week.",
         status: 'published',
         readMins: 6,
         tags: [ 'vr', 'digitata']
