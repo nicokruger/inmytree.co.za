@@ -14,7 +14,7 @@
         <Content class="content animate-fadeIn"/>
         <template v-if="post">
           <!--<Newsletter />-->
-        <h2>Other AWS Articles</h2>
+        <h2>Other Articles</h2>
         <Posts/>
         </template>
       </main>
