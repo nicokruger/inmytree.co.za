@@ -1,5 +1,5 @@
 ---
-title: "Visiting the future every morning - working in Virtual Reality part 1."
+title: "Visiting the future every morning: Working in Virtual Reality Part 1."
 description: "My morning starts with coffee, catching up on news and then getting into work. Except that for the last week, I've been doing this in a magical cave, a space station and other exotic locations. I've been working in Virtual Reality for the last week."
 head:
 - - meta

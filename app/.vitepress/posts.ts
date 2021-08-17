@@ -1,7 +1,7 @@
 export default [
     {
         url: '/blog/visiting-future-every-morning-working-in-vr/',
-        title: 'Visting the future every morning - working in Virtual Reality part 1.',
+        title: 'Visiting the future every morning: Working in Virtual Reality Part 1.',
         publishDate: '16th August 2021',
         date: '2021-08-16',
         excerpt: "My morning starts with coffee, catching up on news and then getting into work. Except that for the last week, I've been doing the above in a magical cave, a log cabin overlooking a mountain, a space station orbiting the Earth, and many more exotic locations. I've been working in Virtual Reality for the last week.",
