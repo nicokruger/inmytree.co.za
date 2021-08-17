@@ -29,7 +29,7 @@ head:
     content: "https://www.inmytree.co.za/blog/visiting-future-every-morning-working-in-vr/"
 - - meta
   - property: "twitter:title"
-    content: "Visiting the future every morning: Working in Virtual Reality Part 1.'
+    content: "Visiting the future every morning: Working in Virtual Reality Part 1."
 - - meta
   - property: "twitter:description"
     content: "My morning starts with coffee, catching up on news and then getting into work. Except that for the last week, I've been doing this in a magical cave, a space station and other exotic locations. I've been working in Virtual Reality for the last week."
