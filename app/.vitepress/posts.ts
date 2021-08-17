@@ -1,6 +1,6 @@
 export default [
     {
-        url: '/blog/vr/',
+        url: '/blog/visiting-future-every-morning-working-in-vr/',
         title: 'Visting the future every morning - working in Virtual Reality part 1.',
         publishDate: '16th August 2021',
         date: '2021-08-16',
