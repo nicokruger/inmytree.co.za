@@ -146,7 +146,7 @@ My experience has been consistently amazing. I find myself spending more and mor
 
 Battery life is good enough, but could be better. My battery tends to last between 3 and 4 hours. Luckily, you can keep the headset plugged into your computer while working since you will probably be sitting in a stationary position anyway.
 
-Performance is excellent. The headset itself is more than powerful enough to display the relevant virtual screens and the head tracking is so good that you forget that you have a headset on. The hand tracking is better than I expected and is only destined to get better over the next while, even though it is still considered an experimental feature. I very rarely had any issues with the hand tracking. I am certain that the next generation will have perfected the hand tracking and posess increased horsepower so we can have even better, more elaborate environments to work in. The future is incredibly bright!
+Performance is excellent. The headset itself is more than powerful enough to display the relevant virtual screens and the head tracking is so good that you forget that you have a headset on. The hand tracking is better than I expected and is only destined to get better - even though it is still considered an experimental feature, I very rarely had any issues with the hand tracking. I am certain that the next generation will have perfected this and possess increased horsepower so we can have even better, more elaborate environments to work in. The future is incredibly bright!
 
 You can find more details on my day to day experience and thoughts in the diary at the end of the article.
 
@@ -174,7 +174,7 @@ I believe that working in VR by yourself is already _at least as productive_ as 
  - You only have one or two screens on your work desk at the moment.
  - You have strong Wifi on your LAN (5ghz Wifi at least).
  - You have a strong PC/Laptop connected over ethernet to your LAN (preferably 1gbps LAN connection, but I have gotten away so far with less with some slow down when sharing larger screens).
- - Your day to work doesn't require you to interact with your phone. There are ways to get your phone into VR, but I haven't gotten any of them to work thus far (I also didn't try that hard, as my day-to-day does not require me to take customer calls etc.)
+ - Your day to day work doesn't require you to interact with your phone much. There are ways to get your phone into VR, but I haven't gotten any of them to work thus far (I also didn't try that hard, as my day-to-day does not require me to take customer calls etc.)
  - You need to minimise the amount of times that you have to take the headset off as well as the amount of time you spend fumbling around trying to find the keys on the keyboard or reaching for the mouse.
 
 The potential here is amazing and I am convinced that this is something I will do on a regular basis going forward.
