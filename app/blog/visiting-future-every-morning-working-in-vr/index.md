@@ -140,7 +140,7 @@ Under the following conditions:
  - You need to be able to touch type.
  - You only have one or two screens on your work desk.
  - You have strong Wifi on your LAN (5ghz Wifi at least)
- - You have as strong PC/Laptop connected over ethernet to your LAN (preferably 1gbps LAN connection, but I have gotten away so far with less with some slow down when sharing larger screens).
+ - You have a strong PC/Laptop connected over ethernet to your LAN (preferably 1gbps LAN connection, but I have gotten away so far with less with some slow down when sharing larger screens).
  - Your day to work doesn't require you to interact with your phone. There are ways to get your phone into VR, but I haven't gotten any of them to work thus far (I also didn't try that hard, as my day-to-day does not require me to take customer calls etc.)
 
  Some cool benefits I found:
