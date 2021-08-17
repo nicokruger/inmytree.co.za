@@ -134,9 +134,9 @@ This is the thing I miss the most. Working together in small groups hunched over
 
 ## My setup
 
-I use [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install-win10) on Windows 10. In WSL I use a combination of [i3wm](https://i3wm.org/), [Vcxsrv](https://sourceforge.net/projects/vcxsrv/), [vim](https://www.vim.org/) and [tmux](https://github.com/tmux/tmux/wiki) to get a keyboard based tiling window based setup. I also use [Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb?hl=en) extension for Chrome which allows me to drive Chrome through the keyboard.
+I use [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install-win10) on Windows 10. In WSL I use a combination of [i3wm](https://i3wm.org/), [Vcxsrv](https://sourceforge.net/projects/vcxsrv/), [vim](https://www.vim.org/) and [tmux](https://github.com/tmux/tmux/wiki) to get a keyboard based tiling window based setup. I also use the [Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb?hl=en) extension for Chrome which allows me to drive the browser through the keyboard.
 
-The above setup lends itself well to the current state of working in VR - the absence of VR keyboards or physical keyboards that have a presence in VR makes it so that you have to touch type. You need to try and reduce the amount of mouse work required to a minimum. It is still more than possible to use the mouse in VR (in fact I tested a mouse heavy work load as well and it worked well) however it does get slightly infuriating when reaching blindly for the mouse while looking at your VR environment.
+The above setup lends itself well to the current state of working in VR - the absence of VR keyboards or physical keyboards that have a presence in VR makes it so that you have to touch type. You need to try and reduce the amount of mouse work required as much as possible. It is still more than possible to use the mouse in VR (in fact I tested a mouse heavy work load as well and it worked well) however it does get slightly infuriating when reaching blindly for the mouse while looking at your VR environment.
 
 All of this will become better over time as more peripherals are brought into VR, such as the [Logitech K830 Keyboard](https://www.takealot.com/logitech-k830-illuminated-living-room-keyboard/PLID33052364).
 
@@ -144,14 +144,18 @@ All of this will become better over time as more peripherals are brought into VR
 
 My experience has been consistently amazing. I find myself spending more and more time in VR sessions every day. Text is more than readable (although if you look closely it does shimmer a bit), especially in the center of your view. At the sides text can be blurry at times, however. Getting the headset to fit correctly is of paramount importance.
 
+Battery life is good enough, but could be better. My battery tends to last between 3 and 4 hours. Luckily, you can keep the headset plugged into your computer while working since you will probably be sitting in a stationary position anyway.
+
+Performance is excellent. The headset itself is more than powerful enough to display the relevant virtual screens and the head tracking is so good that you forget that you have a headset on. The hand tracking is better than I expected and is only destined to get better over the next while, even though it is still considered an experimental feature. I very rarely had any issues with the hand tracking. I am certain that the next generation will have perfected the hand tracking and posess increased horsepower so we can have even better, more elaborate environments to work in. The future is incredibly bright!
+
 You can find more details on my day to day experience and thoughts in the diary at the end of the article.
 
 ## Benefits
 
 Some cool benefits I found:
   - I need less space on my desk because I don't need physical screens anymore.
-  - I can actually read the text in VR without my glasses. I still get fatigue without them buy at least I can read the text without glasses!
-  - In the mornings I get glare in my home office from the morning sun. When I am in VR this is not an issue - but is quite striking when I take the headset off and have to deal with the glare on my main monitor afterwards!
+  - I can actually read the text in VR without my glasses. I still get fatigue without them but at least I can read the text without glasses!
+  - In the mornings I get glare in my home office from the morning sun. When I am in VR of course this is not an issue - but it is quite striking when I take the headset off and have to deal with the glare on my main monitor afterwards!
   - I completely and utterly lose track of time. It really does help me to focus.
 
 ## Next Steps
@@ -161,7 +165,7 @@ Some cool benefits I found:
 - Continuously try to improve my work setup. The obvious next step is to wire CAT-6 to my desktop and get rid of Ethernet over Power (more on that in diary below)
 
 
-## Conclusion and Thoughts
+## Conclusion
 
 I believe that working in VR by yourself is already _at least as productive_ as working normally, with an inclination to actually _make you more productive_ under the following circumstances:
 ---
@@ -179,7 +183,7 @@ The potential here is amazing and I am convinced that this is something I will d
 
 ## My rough Diary
 
-Below my diary with notes I took as I was going through the experience. Much more detailed information provided here for anyone interested in trying this for themselves.
+Below my diary with notes I took as I was going through the experience. Much more detailed information provided here for anyone interested in trying this for themselves and reading through my ramblings...
 
 ### Day 1
 
