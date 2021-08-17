@@ -10,7 +10,7 @@ head:
     content: "website"
 - - meta
   - property: "og:url"
-    content: "https://www.inmytree.co.za/how-to-speed-up-your-bespoke-machine-learning-algorithms-by-up-to-100x/"
+    content: "https://www.inmytree.co.za/blog/how-to-speed-up-your-bespoke-machine-learning-algorithms-by-up-to-100x/"
 - - meta
   - property: "og:title"
     content: "How to speed up your bespoke machine learning algorithms by up to 100x"
@@ -25,7 +25,7 @@ head:
     content: "summary_large_image"
 - - meta
   - property: "twitter:url"
-    content: "https://www.inmytree.co.za/how-to-speed-up-your-bespoke-machine-learning-algorithms-by-up-to-100x/"
+    content: "https://www.inmytree.co.za/blog/how-to-speed-up-your-bespoke-machine-learning-algorithms-by-up-to-100x/"
 - - meta
   - property: "twitter:title"
     content: "How to speed up your bespoke machine learning algorithms by up to 100x"

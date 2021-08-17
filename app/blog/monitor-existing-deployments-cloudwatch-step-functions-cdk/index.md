@@ -11,7 +11,7 @@ head:
     content: "website"
 - - meta
   - property: "og:url"
-    content: "https://www.inmytree.co.za/monitor-existing-deployments-cloudwatch-step-functions-cdk/"
+    content: "https://www.inmytree.co.za/blog/monitor-existing-deployments-cloudwatch-step-functions-cdk/"
 - - meta
   - property: "og:title"
     content: 'Monitor all your existing deployments with CloudWatch, Step Functions and CDK'
@@ -26,7 +26,7 @@ head:
     content: "summary_large_image"
 - - meta
   - property: "twitter:url"
-    content: "https://www.inmytree.co.za/monitor-existing-deployments-cloudwatch-step-functions-cdk/"
+    content: "https://www.inmytree.co.za/blog/monitor-existing-deployments-cloudwatch-step-functions-cdk/"
 - - meta
   - property: "twitter:title"
     content: "Monitor all your existing deployments with CloudWatch, Step Functions and CDK"
