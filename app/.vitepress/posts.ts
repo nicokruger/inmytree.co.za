@@ -1,9 +1,19 @@
 export default [
     {
+        url: '/blog/vr/',
+        title: 'Visting the future every morning - working in Virtual Reality',
+        publishDate: '16th August 2021',
+        date: '2021-08-16',
+        excerpt: "For the last week I've been working in VR for at least an hour a day. Find out about my experience here",
+        status: 'published',
+        readMins: 6,
+        tags: [ 'vr', 'digitata']
+    },
+    {
         url: '/blog/monitor-existing-deployments-cloudwatch-step-functions-cdk/',
         title: 'Monitor all your existing deployments with CloudWatch, Step Functions and CDK',
         publishDate: '23rd July 2021',
-        date: '2021-06-29',
+        date: '2021-07-23',
         excerpt: "How we are pulling all our important on-premise metrics/KPI's into CloudWatch using a robust, serverless and low-cost approach by leveraging Step Functions, CDK, your VPC and Lambda.",
         status: 'published',
         readMins: 9,
