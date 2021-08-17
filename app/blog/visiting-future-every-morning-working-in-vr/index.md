@@ -39,7 +39,9 @@ head:
 
 ---
 
-Like many of you, my morning starts with coffee, catching up on news and then getting into work. Catching up on emails and so forth and then starting on work tasks. Except that for the last week, I've been doing the above in a magical cave, a log cabin overlooking a mountain, a space station orbiting the Earth, and many more exotic locations.
+Like many of you, my morning starts with coffee, catching up on news and then getting into work: Read/reply to emails, look at my calendar, plan my day and then move on to work tasks.
+
+Except that for the last week, I've been doing the above in a magical cave, a log cabin overlooking a mountain, a space station orbiting the Earth, and many more exotic locations.
 
 I've been working in **[Virtual Reality](https://en.wikipedia.org/wiki/Virtual_reality)** for the last week.
 
@@ -53,13 +55,18 @@ One of the benefits of my job is I have an excuse to try new things. So a week o
 
 The goals of this experiment for the following month or so is as follows:
 
-  - Actually work in VR for a couple of hours every day.
-  - Be at least as productive as I would have been previously. Ideally, I would be more productive.
-  - I need to be able to complete at least the following tasks in VR:
-    - Write code
-    - Read and reply to emails
-    - Attend meetings with coworkers
-    - Use things like Slack, the AWS console etc. without any issues.
+  1. Actually work in VR for a couple of hours every day.
+  2. Be at least as productive as I would have been previously. Ideally, I would be more productive.
+  3. I need to be able to complete at least the following tasks in VR:
+      - Write code
+      - Read and reply to emails
+      - Attend meetings with coworkers
+      - Use things like Slack, the AWS console etc. without any issues.
+
+  4. Experience and test collaboration inside VR.
+  5. Host a meeting/presentation of some sort in VR.
+
+This first part is about #1, #2 and #3.
 
 ## Why work in Virtual Reality?
 The benefits of Virtual Reality for work/productivity applications can be summarised as follows:
@@ -86,43 +93,46 @@ This is the thing I miss the most. Working together in small groups hunched over
 
 ## Progress so far
 
-### Some screenshots
+### Videos
 
 <div class="md:flex md:flex-row">
 
-  <figure class="w-96 h-96 m-1">
+  <figure class="w-96 h-96 md:m-1">
     <iframe class="block mx-auto" src="https://www.youtube.com/embed/mWYdQuVMBa0" frameborder="0" allowfullscreen></iframe>
   </figure>
 
-  <figure class="w-96 h-96 m-1">
+  <figure class="w-96 h-96 md:m-1">
     <iframe class="block mx-auto" src="https://www.youtube.com/embed/W4reI1N76X4" frameborder="0" allowfullscreen></iframe>
   </figure>
 
 
 </div>
 
-<div class="md:flex md:flex-row">
-  <figure class="w-96 h-96 m-1">
-    <img src="../../resources/immersed-meeting.jpg" class="block mx-auto" alt="A company meeting">
-  </figure>
 
-  <figure class="w-96 h-96 m-1">
-    <img src="../../resources/meetinvr-whiteboard.jpg" class="block mx-auto" alt="Trying to draw">
-  </figure>
-</div>
+### Screenshots
 
 <div class="md:flex md:flex-row">
-  <figure class="w-96 h-96 m-1">
+  <figure class="w-96 h-96 md:m-1">
     <img src="../../resources/vrdesktop.png" class="block mx-auto" alt="Virtual Desktop">
   </figure>
 
-  <figure class="w-96 h-96 m-1">
+  <figure class="w-96 h-96 md:m-1">
     <img src="../../resources/spacevr.png" class="block mx-auto" alt="Working in space">
   </figure>
 </div>
 
+<div class="md:flex md:flex-row">
+  <figure class="w-96 h-96 md:m-1">
+    <img src="../../resources/immersed-meeting.jpg" class="block mx-auto" alt="A company meeting">
+  </figure>
 
-### My setup
+  <figure class="w-96 h-96 md:m-1">
+    <img src="../../resources/meetinvr-whiteboard.jpg" class="block mx-auto" alt="Trying to draw">
+  </figure>
+</div>
+
+
+## My setup
 
 I use [Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install-win10) on Windows 10. In WSL I use a combination of [i3wm](https://i3wm.org/), [Vcxsrv](https://sourceforge.net/projects/vcxsrv/), [vim](https://www.vim.org/) and [tmux](https://github.com/tmux/tmux/wiki) to get a keyboard based tiling window based setup. I also use [Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb?hl=en) extension for Chrome which allows me to drive Chrome through the keyboard.
 
@@ -130,32 +140,19 @@ The above setup lends itself well to the current state of working in VR - the ab
 
 All of this will become better over time as more peripherals are brought into VR, such as the [Logitech K830 Keyboard](https://www.takealot.com/logitech-k830-illuminated-living-room-keyboard/PLID33052364).
 
-## Conclusion and Thoughts
+## Experience
 
-If you're not interested in reading through my diary below (and I don't blame you) and just want my thoughts so far:
+My experience has been consistently amazing. I find myself spending more and more time in VR sessions every day. Text is more than readable (although if you look closely it does shimmer a bit), especially in the center of your view. At the sides text can be blurry at times, however. Getting the headset to fit correctly is of paramount importance.
 
-To get a good experience, you need to minimise the amount of times that you have to take the headset off as well as the amount of time you spend fumbling around trying to find the keys on the keyboard or reaching for the mouse.
+You can find more details on my day to day experience and thoughts in the diary at the end of the article.
 
-Under the following conditions:
- - You need to be able to touch type.
- - You only have one or two screens on your work desk.
- - You have strong Wifi on your LAN (5ghz Wifi at least)
- - You have a strong PC/Laptop connected over ethernet to your LAN (preferably 1gbps LAN connection, but I have gotten away so far with less with some slow down when sharing larger screens).
- - Your day to work doesn't require you to interact with your phone. There are ways to get your phone into VR, but I haven't gotten any of them to work thus far (I also didn't try that hard, as my day-to-day does not require me to take customer calls etc.)
+## Benefits
 
- Some cool benefits I found:
+Some cool benefits I found:
   - I need less space on my desk because I don't need physical screens anymore.
   - I can actually read the text in VR without my glasses. I still get fatigue without them buy at least I can read the text without glasses!
   - In the mornings I get glare in my home office from the morning sun. When I am in VR this is not an issue - but is quite striking when I take the headset off and have to deal with the glare on my main monitor afterwards!
   - I completely and utterly lose track of time. It really does help me to focus.
-
----
-I believe that working in VR in a solo fashion is **already** _at least as productive_ as working normally, with a tendency to actually _make you more productive_ depending on circumstances.
----
-
-The potential here is amazing and I am convinced that this is something I will do on a regular basis going forward.
-
----
 
 ## Next Steps
 
@@ -163,12 +160,27 @@ The potential here is amazing and I am convinced that this is something I will d
 
 - Continuously try to improve my work setup. The obvious next step is to wire CAT-6 to my desktop and get rid of Ethernet over Power (more on that in diary below)
 
-### My rough Diary
+
+## Conclusion and Thoughts
+
+I believe that working in VR by yourself is already _at least as productive_ as working normally, with an inclination to actually _make you more productive_ under the following circumstances:
+---
+
+ - You can touch type to a reasonable extent.
+ - You only have one or two screens on your work desk at the moment.
+ - You have strong Wifi on your LAN (5ghz Wifi at least).
+ - You have a strong PC/Laptop connected over ethernet to your LAN (preferably 1gbps LAN connection, but I have gotten away so far with less with some slow down when sharing larger screens).
+ - Your day to work doesn't require you to interact with your phone. There are ways to get your phone into VR, but I haven't gotten any of them to work thus far (I also didn't try that hard, as my day-to-day does not require me to take customer calls etc.)
+ - You need to minimise the amount of times that you have to take the headset off as well as the amount of time you spend fumbling around trying to find the keys on the keyboard or reaching for the mouse.
+
+The potential here is amazing and I am convinced that this is something I will do on a regular basis going forward.
+
+<div id="vr-diary" class="p-2 rounded shadow bg-gray-300">
+
+## My rough Diary
+
 Below my diary with notes I took as I was going through the experience. Much more detailed information provided here for anyone interested in trying this for themselves.
 
-<div id="vr-diary" class="break-normal">
-
-```markdown
 ### Day 1
 
 Got the quest. Installed and set everything up. The initial on-boarding experience from the tutorials is absolutely amazing. The visual quality of the Quest 2 is far beyond anything I've experienced in VR so far - specifically compared to the earlier models like the Rift DK2 that I played with.
@@ -222,7 +234,5 @@ Additionally, start looking into MeetVR. I want to prepare a meeting/presentatio
 ### Day 7
 
 My Desktop PC starts overheating when I do very heavy workloads: 4 screens + the virtual webcam + meetings over google meet/slack. This has been a weakness in my Dekstop PC for a while now as the PC ages but again VR is quite good at highlighting weaknesses in your setup!
-
-```
 
 </div>

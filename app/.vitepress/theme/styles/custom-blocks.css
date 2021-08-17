@@ -77,6 +77,10 @@
   word-wrap: break-word !important;       /* Internet Explorer 5.5+ */
 }
 
+#vr-diary {
+  font-size: 0.8rem;
+}
+
 #vr-diary pre {
   font-size: 1rem;
   white-space: pre-wrap !important;       /* Since CSS 2.1 */
@@ -86,9 +90,3 @@
   word-wrap: break-word !important;       /* Internet Explorer 5.5+ */
 }
 
-#vr-diary {
-  font-size: 24px;
-}
-#vr-diary {
-  font-size: 24px;
-}
