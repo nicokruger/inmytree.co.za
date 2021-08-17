@@ -89,6 +89,28 @@ The potential here is amazing and I am convinced that this is something I will d
 
 - Continously try to improve my work setup. The obvious next step is to wire CAT6 to my dsktop and get rid of Ethernet over Power (more on that in diary below)
 
+## Some screenshots
+
+<div class="flex flex-row">
+<figure class="w-96 h-96 m-1">
+<img src="../../resources/immersed-meeting.jpg" class="block mx-auto" alt="A company meeting">
+</figure>
+
+<figure class="w-96 h-96 m-1">
+<img src="../../resources/meetinvr-whiteboard.jpg" class="block mx-auto" alt="Trying to draw">
+</figure>
+</div>
+
+<div class="flex flex-row">
+<figure class="w-96 h-96 m-1">
+<img src="../../resources/vrdesktop.png" class="block mx-auto" alt="Virtual Desktop">
+</figure>
+
+<figure class="w-96 h-96 m-1">
+<img src="../../resources/spacevr.png" class="block mx-auto" alt="Working in space">
+</figure>
+</div>
+
 ## My rough Diary
 ### Day 1
 
