@@ -83,7 +83,31 @@ One of the things we all miss from the days of going to office is being present 
 ### Collaboration
 This is the thing I miss the most. Working together in small groups hunched over a computer solving a problem. Virtual Reality allows us to share our fanciful impossible screens so that others can view them as well. Shared whiteboards allow us to plan and draw together, all with your hands and without requiring any special equipment like tablets.
 
+
 ## Progress so far
+
+### Some screenshots
+
+<div class="md:flex md:flex-row">
+<figure class="w-96 h-96 m-1">
+<img src="../../resources/immersed-meeting.jpg" class="block mx-auto" alt="A company meeting">
+</figure>
+
+<figure class="w-96 h-96 m-1">
+<img src="../../resources/meetinvr-whiteboard.jpg" class="block mx-auto" alt="Trying to draw">
+</figure>
+</div>
+
+<div class="md:flex md:flex-row">
+<figure class="w-96 h-96 m-1">
+<img src="../../resources/vrdesktop.png" class="block mx-auto" alt="Virtual Desktop">
+</figure>
+
+<figure class="w-96 h-96 m-1">
+<img src="../../resources/spacevr.png" class="block mx-auto" alt="Working in space">
+</figure>
+</div>
+
 
 ### My setup
 
@@ -125,28 +149,6 @@ The potential here is amazing and I am convinced that this is something I will d
 - For the next couple of weeks I am going to focus on meetings and presentations in VR with my coworkers. Apps like [MeetinVR](https://www.meetinvr.com/), [Spatial](https://spatial.io/) show massive potential in this space.
 
 - Continuously try to improve my work setup. The obvious next step is to wire CAT-6 to my desktop and get rid of Ethernet over Power (more on that in diary below)
-
-## Some screenshots
-
-<div class="flex flex-row">
-<figure class="w-96 h-96 m-1">
-<img src="../../resources/immersed-meeting.jpg" class="block mx-auto" alt="A company meeting">
-</figure>
-
-<figure class="w-96 h-96 m-1">
-<img src="../../resources/meetinvr-whiteboard.jpg" class="block mx-auto" alt="Trying to draw">
-</figure>
-</div>
-
-<div class="flex flex-row">
-<figure class="w-96 h-96 m-1">
-<img src="../../resources/vrdesktop.png" class="block mx-auto" alt="Virtual Desktop">
-</figure>
-
-<figure class="w-96 h-96 m-1">
-<img src="../../resources/spacevr.png" class="block mx-auto" alt="Working in space">
-</figure>
-</div>
 
 ## My rough Diary
 ### Day 1
