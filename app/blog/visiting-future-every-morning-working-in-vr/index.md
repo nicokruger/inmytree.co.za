@@ -85,7 +85,7 @@ You can have as many screens as you want. Imagine an IMAX sized screen with your
 You can completely remove yourself from your physical surroundings and focus. The environment is completely customisable and free from distractions (unless you allow them...).
 
 ### Presence
-One of the things we all miss from the days of going to office is being present with other people. VR goes some way to alleviate this. You can share a workspace with others and experience proximity and presence again, even when working from home.
+One of the things we all miss from the days of going to the office is being present with other people. VR promises a way to alleviate this in the future. You can share a workspace with others and experience proximity and presence again, even when working from home.
 
 ### Collaboration
 This is the thing I miss the most. Working together in small groups hunched over a computer solving a problem. Virtual Reality allows us to share our fanciful impossible screens so that others can view them as well. Shared whiteboards allow us to plan and draw together, all with your hands and without requiring any special equipment like tablets.
@@ -176,6 +176,7 @@ I believe that working in VR by yourself is already _at least as productive_ as 
  - You have a strong PC/Laptop connected over ethernet to your LAN (preferably 1gbps LAN connection, but I have gotten away so far with less with some slow down when sharing larger screens).
  - Your day to day work doesn't require you to interact with your phone much. There are ways to get your phone into VR, but I haven't gotten any of them to work thus far (I also didn't try that hard, as my day-to-day does not require me to take customer calls etc.)
  - You need to minimise the amount of times that you have to take the headset off as well as the amount of time you spend fumbling around trying to find the keys on the keyboard or reaching for the mouse.
+ - You don't mind that the resolution on text rendering is not absolutely perfect yet. It is close, but not 100% perfect... yet. For me personally it is good enough already.
 
 The potential here is amazing and I am convinced that this is something I will do on a regular basis going forward.
 
